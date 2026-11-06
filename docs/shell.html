@@ -1,0 +1,198 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>$SHELL — how money works in Shell City</title>
+<meta name="description" content="How $SHELL works in Shell City: wages paid from player spending, prices from an on-chain pool, withdrawals to your own Solana address, and the full loop proven on devnet.">
+<meta name="theme-color" content="#0d121c">
+<link rel="canonical" href="https://shellcity.fun/shell.html">
+<link rel="icon" href="img/favicon.svg" type="image/svg+xml">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="Shell City">
+<meta property="og:title" content="$SHELL — how money works in Shell City">
+<meta property="og:description" content="Wages paid from player spending, prices from an on-chain pool, withdrawals to your own Solana address.">
+<meta property="og:url" content="https://shellcity.fun/shell.html">
+<meta property="og:image" content="https://shellcity.fun/img/og.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:site" content="@ShellCityFun">
+<link rel="preload" href="fonts/BebasNeue.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="fonts/Inter.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="css/site.css">
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+
+<header class="nav solid" id="nav">
+	<div class="wrap">
+		<a class="brand" href="./" aria-label="Shell City home"><img src="img/wordmark.svg" alt="Shell City" width="150" height="34"></a>
+		<button class="nav-toggle" aria-expanded="false" aria-controls="links" aria-label="Menu">
+			<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+		</button>
+		<nav class="nav-links" id="links" aria-label="Main">
+			<a href="./#city">The city</a>
+			<a href="./#districts">Districts</a>
+			<a href="shell.html" aria-current="page">$SHELL</a>
+			<a href="./#faq">FAQ</a>
+			<a class="btn btn-primary" href="https://www.roblox.com/games/130170912798923/Shell-City" rel="noopener">Roblox</a>
+		</nav>
+	</div>
+</header>
+
+<main id="main">
+
+<div class="page-hero">
+	<div class="wrap">
+		<p class="eyebrow">How money works</p>
+		<h1>$SHELL</h1>
+		<p class="lede">Shell City's money is a Solana token. It is earned by working, spent at businesses run by the city and by players, and it can leave the game to an address you choose. Here is exactly how it moves.</p>
+	</div>
+</div>
+
+<section aria-labelledby="loop-title">
+	<div class="wrap">
+		<div class="section-head reveal">
+			<div>
+				<p class="eyebrow">The loop</p>
+				<h2 id="loop-title">Spent here,<br>paid here.</h2>
+			</div>
+			<p class="lede">Nothing is minted to pay a wage. Money goes round: a player buys a burger, part of that pays the person who made it, and part of it makes the city's coins scarcer.</p>
+		</div>
+		<div class="cards reveal">
+			<div class="card"><h3>Every purchase</h3><p>85% goes to the business. That fills its wage pot, and its workers are paid only from that pot. 10% goes to the business's coin buyback pool and 5% to the city treasury.</p></div>
+			<div class="card"><h3>Buyback and burn</h3><p>Once a coin's pool holds 10 $SHELL, the city buys that coin on chain and burns it. Busy businesses make their coin scarcer.</p></div>
+			<div class="card"><h3>Pay by the stars</h3><p>A task pays its posted price by your stars: three stars pay 100%, two pay 80%, one pays 30%. Daily pay tapers after your first 90 paid minutes.</p></div>
+			<div class="card"><h3>One price source</h3><p>Every price in the game comes from an on-chain pool. Our database only caches it, and it is never invented.</p></div>
+			<div class="card"><h3>Own a business</h3><p>Businesses can be claimed by players. The Burger Stand sells a meal for 1.50 $SHELL, and you can claim it for 150 $SHELL.</p></div>
+			<div class="card"><h3>The start grant</h3><p>New players get 25 $SHELL to get going. It is the only coin the game ever creates, it can be spent in the city, and it can never be withdrawn.</p></div>
+		</div>
+	</div>
+</section>
+
+<section class="money" aria-labelledby="out-title">
+	<div class="wrap money-grid">
+		<div class="reveal">
+			<p class="eyebrow">Taking it out</p>
+			<h2 id="out-title">Your money,<br>your address.</h2>
+			<p class="lede" style="margin-top:22px">You never connect a wallet and you never see a private key. When you want to withdraw, paste any Solana address and confirm: the fee is shown before you press the button.</p>
+			<div class="fees" aria-label="Withdrawal fees">
+				<div><b class="num">5%</b><span>under 25 $SHELL</span></div>
+				<div><b class="num">3%</b><span>25 to 250 $SHELL</span></div>
+				<div><b class="num">1.5%</b><span>above 250 $SHELL</span></div>
+			</div>
+			<p style="margin-top:18px;color:var(--chalk-dim)">The smallest fee is 0.01 $SHELL. Withdrawal fees are shared between the Soup Kitchen, Fountain and Park Bench wage pots, so they pay the people working the free tier.</p>
+		</div>
+		<aside class="payslip reveal" aria-label="Street Cred">
+			<header><b>Street Cred</b><span>reach 100 to withdraw</span></header>
+			<dl>
+				<dt>Account is 72 hours old</dt><dd class="num">+30</dd>
+				<dt>6 paid shifts on 3 days</dt><dd class="num">+40</dd>
+				<dt>A paid meal or rent</dt><dd class="num">+10</dd>
+				<dt>A delivery, repair or crate job</dt><dd class="num">+20</dd>
+			</dl>
+			<dl class="total"><dt>Total</dt><dd class="num">100</dd></dl>
+			<footer>Below 100, only $SHELL you deposited and have not spent can leave. Limits: 1,000 $SHELL per withdrawal, 5,000 a day.</footer>
+		</aside>
+	</div>
+</section>
+
+<section aria-labelledby="safe-title">
+	<div class="wrap">
+		<div class="section-head reveal">
+			<div>
+				<p class="eyebrow">Built carefully</p>
+				<h2 id="safe-title">Boring on purpose.</h2>
+			</div>
+			<p class="lede">Money code should be dull. Ours is a ledger you can't edit, checked against the chain every day.</p>
+		</div>
+		<div class="cards reveal">
+			<div class="card"><h3>Double-entry ledger</h3><p>Every movement is a pair of entries that must sum to zero. Entries can be added but never edited or deleted, and amounts are whole base units: no floating point, ever.</p></div>
+			<div class="card"><h3>Daily reconciliation</h3><p>Once a day the ledger is compared with every token account the city controls, and the result is written down. Nothing is quietly corrected.</p></div>
+			<div class="card"><h3>Final only</h3><p>Deposits are credited, and withdrawals settled, only at Solana's finalized commitment. A withdrawal carries its own ID as the on-chain memo.</p></div>
+			<div class="card"><h3>Hot and cold</h3><p>The wallet that pays withdrawals holds only a working float. The treasury is a separate offline key.</p></div>
+			<div class="card"><h3>A kill switch</h3><p>Payouts can be paused with one setting. Requests still queue and nothing is lost.</p></div>
+			<div class="card"><h3>Tested hard</h3><p>More than 4,000 automated tests across the game and the backend, and every fix to a money path is proved by breaking it first.</p></div>
+		</div>
+		<p class="note">Shell City holds players' balances for them (it is custodial): our backend keeps the keys, so players never have to. The code reviews so far have been our own, not an outside audit.</p>
+	</div>
+</section>
+
+<section id="proof" aria-labelledby="proof-title" style="padding-top:0">
+	<div class="wrap">
+		<div class="section-head reveal">
+			<div>
+				<p class="eyebrow">Proven on devnet</p>
+				<h2 id="proof-title">Don't take our word for it.</h2>
+			</div>
+			<p class="lede">On 30 October 2026 we ran the whole money loop on Solana devnet with a test mint. Every step is a public transaction you can open.</p>
+		</div>
+		<div class="table-scroll reveal">
+			<table class="proof">
+				<thead><tr><th>Step</th><th>What happened</th><th>Transaction</th></tr></thead>
+				<tbody>
+					<tr><td>Deposit</td><td>150 test $SHELL sent to a player's own deposit address, credited within one 15-second tick</td><td><a href="https://explorer.solana.com/tx/2NU3odEGh4VMfZwv6exdny4dgcV4Q4R1TCtNrJRTh7Gta4huGG6PtDAsHHpQuXTpqZiY2bYaLjsMTqCXnfVpanPS?cluster=devnet" rel="noopener">2NU3odEG…VpanPS</a></td></tr>
+					<tr><td>Trade</td><td>5 $SHELL swapped for a city coin (BURGR), settled in about 30 seconds</td><td><a href="https://explorer.solana.com/tx/zHWpH84ddpKUaej4XPEhjkRu8uBBV69oMRGPbdSZPhFhpbiaFs8zf1jR9G4MMt5DxvXuTascChVb8mV33bcHZzh?cluster=devnet" rel="noopener">zHWpH84d…cHZzh</a></td></tr>
+					<tr><td>Buyback and burn</td><td>67 purchases filled the pool with 10.05 $SHELL; the city bought BURGR and burned it within a minute</td><td><a href="https://explorer.solana.com/tx/5ALXyuLFPXA7zSReFChsBKNRRMKERSEAtf3KtBGnVhLUVrb4wqPeqBinaDzSsGtQCAuyjhLcUeYLwp6hnXRXw8jv?cluster=devnet" rel="noopener">5ALXyuLF…nXRXw8jv</a></td></tr>
+					<tr><td>Withdrawal</td><td>20 $SHELL out: a 1 $SHELL fee, 19 delivered, confirmed at finality in under two minutes</td><td><a href="https://explorer.solana.com/tx/3VD7sGhbv9FdMsv8M8sLmKaN9QfNTW3NmyiyepTjMrBKGQpW46Rn9CZdcNa97R6qgokuSRvEd4aZYXjrSZQEEHgw?cluster=devnet" rel="noopener">3VD7sGhb…ZQEEHgw</a></td></tr>
+					<tr><td>Reconciliation</td><td>Every pool vault matched the ledger with zero drift</td><td style="color:var(--muted)">Ledger check</td></tr>
+				</tbody>
+			</table>
+		</div>
+	</div>
+</section>
+
+<section id="status" aria-labelledby="status-title" style="padding-top:0">
+	<div class="wrap">
+		<div class="section-head reveal">
+			<div>
+				<p class="eyebrow">Launch status</p>
+				<h2 id="status-title">Where we are</h2>
+			</div>
+			<p class="lede">We would rather tell you what isn't done yet than oversell it.</p>
+		</div>
+		<ul class="status-list reveal">
+			<li><span class="pill done">Done</span><div><b>The city</b><span>Eight districts, 29 jobs, the phone, homes, gardens, vehicles, shops and the weekly Drop, all built and tested.</span></div></li>
+			<li><span class="pill done">Done</span><div><b>The money loop on devnet</b><span>Deposit, trade, buyback and burn, withdrawal and reconciliation, run with real Solana transactions.</span></div></li>
+			<li><span class="pill next">Next</span><div><b>Playtests</b><span>Real players in the city together, timing the first wage and the first week.</span></div></li>
+			<li><span class="pill next">Next</span><div><b>Mainnet</b><span>$SHELL is minted on Solana mainnet at launch. Until then it is not live and not tradable.</span></div></li>
+			<li><span class="pill next">Next</span><div><b>Opening the doors</b><span>Shell City goes public on Roblox. Follow @ShellCityFun for the date.</span></div></li>
+		</ul>
+		<p class="note">$SHELL is not an investment and nothing on this site is financial advice. Prices of city coins can fall as well as rise, and in-game earnings are never guaranteed. Shell City is not made, sponsored or endorsed by Roblox Corporation.</p>
+	</div>
+</section>
+
+<section class="cta" aria-labelledby="cta-title">
+	<img src="img/cta.jpg" alt="" loading="lazy">
+	<div class="wrap">
+		<h2 id="cta-title">Be there when it opens.</h2>
+		<p class="lede">Launch news goes out on X first.</p>
+		<div class="socials">
+			<a class="btn btn-primary" href="https://x.com/ShellCityFun" rel="noopener">Follow @ShellCityFun</a>
+			<a class="btn btn-ghost" href="./">Back to the city</a>
+		</div>
+	</div>
+</section>
+
+</main>
+
+<footer class="site">
+	<div class="wrap">
+		<div class="cols">
+			<div>
+				<img src="img/wordmark.svg" alt="Shell City" width="150" height="34" style="margin-bottom:16px">
+				<p>A Roblox city where every wage is paid from what other players spent.</p>
+			</div>
+			<div><h4>The game</h4><ul><li><a href="./#city">The city</a></li><li><a href="./#districts">Districts</a></li><li><a href="https://www.roblox.com/games/130170912798923/Shell-City" rel="noopener">On Roblox</a></li></ul></div>
+			<div><h4>$SHELL</h4><ul><li><a href="#loop-title">How it works</a></li><li><a href="#proof">Proof on devnet</a></li><li><a href="#status">Launch status</a></li></ul></div>
+			<div><h4>Follow</h4><ul><li><a href="https://x.com/ShellCityFun" rel="noopener">X</a></li><li><a href="https://www.tiktok.com/@shellcityfun" rel="noopener">TikTok</a></li><li><a href="https://www.instagram.com/shellcityfun/" rel="noopener">Instagram</a></li></ul></div>
+		</div>
+		<div class="legal">
+			<p>© <span id="year">2026</span> Shell City. Shell City is an independent game on Roblox and is not made, sponsored or endorsed by Roblox Corporation. Roblox is a trademark of Roblox Corporation.</p>
+			<p>$SHELL is a digital token on Solana. It is not an investment, nothing on this site is financial advice, and in-game earnings are never guaranteed. $SHELL is not live on mainnet or tradable yet.</p>
+		</div>
+	</div>
+</footer>
+
+<script src="js/site.js" defer></script>
+</body>
+</html>

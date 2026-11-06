@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://shellcity.fun/sitemap.xml
