@@ -298,3 +298,10 @@ footer.site .legal { border-top: 1px solid var(--line); padding-top: 22px; displ
 .reveal { opacity: 0; transform: translateY(18px); transition: opacity .7s ease, transform .7s ease; }
 .reveal.in { opacity: 1; transform: none; }
 @media (prefers-reduced-motion: reduce) { .reveal { opacity: 1; transform: none; transition: none; } }
+
+/* Terms and Privacy: long-form text */
+.prose { max-width: 72ch; }
+.prose h3 { font-size: 20px; margin: 32px 0 8px; }
+.prose h3:first-child { margin-top: 0; }
+.prose p { color: var(--chalk-dim); margin: 0 0 12px; }
+.prose a { color: var(--amber); }
