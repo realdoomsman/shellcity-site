@@ -228,6 +228,8 @@ section { padding: 120px 0; }
 .flow span { font-size: 14px; color: var(--chalk-dim); }
 @media (max-width: 560px) { .flow { grid-template-columns: 1fr; } }
 
+/* The $SHELL contract address: one unbroken token that may wrap anywhere on a phone. */
+code.ca { font-family: ui-monospace, SFMono-Regular, Consolas, monospace; font-size: .92em; overflow-wrap: anywhere; word-break: break-all; color: var(--chalk); }
 .note { margin-top: 26px; font-size: 14px; color: var(--muted); border-left: 2px solid var(--amber); padding: 4px 0 4px 14px; max-width: 62ch; }
 
 /* ---------- Proof table ($SHELL page) ---------- */
