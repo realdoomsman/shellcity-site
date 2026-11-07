@@ -293,6 +293,22 @@ footer.site .legal { border-top: 1px solid var(--line); padding-top: 22px; displ
 /* ---------- Page hero (inner pages) ---------- */
 .page-hero { padding: 170px 0 70px; background: radial-gradient(900px 420px at 15% 0%, rgba(242,165,65,.12), transparent 60%), var(--ink); border-bottom: 1px solid var(--line); }
 .page-hero h1 { font-size: clamp(60px, 10vw, 140px); margin-bottom: 20px; }
+.page-hero h1.long { font-size: clamp(44px, 6.4vw, 84px); max-width: 20ch; }
+
+/* ---------- Launch proof (proof/) ---------- */
+.proof code { font: 13.5px/1.5 var(--mono); word-break: break-all; }
+.proof .slot { display: block; margin-top: 4px; font: 12px/1 var(--mono); color: var(--muted); }
+@media (max-width: 560px) { .proof.facts td:first-child { white-space: normal; width: 36%; } .proof.facts th, .proof.facts td { padding: 12px 8px; } }
+.proof-sub { margin: 48px 0 14px; }
+.memo, .cmd { margin: 0; padding: 18px 20px; background: var(--ink-2); border: 1px solid var(--line); border-radius: 12px; font: 14px/1.6 var(--mono); color: var(--chalk); white-space: pre-wrap; overflow-wrap: anywhere; }
+.note a { color: var(--teal); }
+.recordings { list-style: none; padding: 0; margin: 0 0 32px; display: grid; gap: 10px; }
+.recordings li { display: grid; gap: 6px; padding: 16px 18px; border: 1px solid var(--line); border-radius: 12px; background: var(--ink-2); }
+.recordings a { color: var(--teal); font-weight: 600; text-decoration: none; }
+.recordings a:hover { text-decoration: underline; }
+.recordings code { font: 12.5px/1.5 var(--mono); color: var(--muted); word-break: break-all; }
+.recordings-empty { color: var(--muted); margin: 0 0 32px; }
+.verify .cmd { margin: 0 0 14px; }
 
 /* ---------- Reveal ---------- */
 .reveal { opacity: 0; transform: translateY(18px); transition: opacity .7s ease, transform .7s ease; }
