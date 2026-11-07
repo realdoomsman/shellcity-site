@@ -1,4 +1,4 @@
-// Launch day (shell-city RAYDIUM.md "The launch, in game"): node go-live.mjs
+// Launch day (shell-city LAUNCH.md "Launch day"): node go-live.mjs
 // Run it once $SHELL's in-game launch has landed. Merges branch `raydium-live` (the launch wording, with a
 // __DATE__ placeholder) into main, fills in today's date, refuses if any placeholder survives, then commits
 // and pushes main. No page names the contract address. GitHub Pages serves main's docs/ at shellcity.fun.
@@ -28,6 +28,6 @@ for (const name of readdirSync(docs).filter((n) => n.endsWith(".html"))) {
 }
 if (filled === 0) throw new Error("no page had a placeholder: was `raydium-live` already merged?");
 git("add", "docs");
-git(...who, "commit", "-q", "-m", `Live: $SHELL launched in game on Raydium LaunchLab, ${date}`);
+git(...who, "commit", "-q", "-m", `Live: $SHELL launched in game on pump.fun, ${date}`);
 git("push", "-q", "origin", "main");
 console.log(`shellcity.fun: ${filled} pages now say $SHELL launched on ${date}; Pages redeploys in about a minute.`);
