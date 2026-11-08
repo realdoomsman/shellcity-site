@@ -39,9 +39,15 @@
 		link($("tx-transfer"), tx(p.transferSignature), p.transferSignature);
 		$("tx-transfer-slot").textContent = `slot ${p.transferSlot}`;
 		link($("mint"), `https://solscan.io/token/${p.mint}`, p.mint);
+		link($("pump"), `https://pump.fun/coin/${p.mint}`, `pump.fun/coin/${p.mint}`);
 		$("job-id").textContent = p.jobId;
 		$("place-version").textContent = String(p.placeVersion);
 		link($("roblox-user"), `https://www.roblox.com/users/${user}/profile`, `roblox.com/users/${user}/profile`);
+		// The backend's Fly image reference (FLY_IMAGE_REF); absent when it runs off Fly.
+		if (typeof p.image === "string" && /^[\w.\/:@-]{1,200}$/.test(p.image)) {
+			$("backend-image").textContent = p.image;
+			$("backend-image-row").hidden = false;
+		}
 		$("memo").textContent = p.memo;
 		$("memo-tx").href = tx(p.signature);
 		$("launch").hidden = false;

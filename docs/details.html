@@ -60,7 +60,7 @@
 				<p class="eyebrow">1 · The launch</p>
 				<h2 id="launch-title">How $SHELL launches</h2>
 			</div>
-			<p class="lede">$SHELL launched on pump.fun, from a console at the Exchange inside the game. It launched on __DATE__.</p>
+			<p class="lede">$SHELL launched on pump.fun on __DATE__, from a console inside the game, shown only to the owner.</p>
 		</div>
 		<div class="cards reveal">
 			<div class="card"><h3>Pressed in game</h3><p>Only the owner's Roblox account can open the launch console. The game server checks who is pressing, and the backend checks again.</p></div>
@@ -70,7 +70,7 @@
 			<div class="card"><h3>First buy to the treasury</h3><p>The launch includes a first buy. A second transaction moves every coin from that buy to the city treasury, so none stays with the launch wallet.</p></div>
 			<div class="card"><h3>A fresh wallet</h3><p>The launch is signed by a brand-new wallet used only for $SHELL. The server refuses to start if that wallet has ever done anything else.</p></div>
 		</div>
-		<p class="note">The <a href="proof/">launch proof page</a> lists every launch transaction, the memo, the game server and the Roblox account, so you can check each one yourself.</p>
+		<p class="note">Once the launch is made public, the <a href="proof/">launch proof page</a> lists every launch transaction, the memo, the game server and the Roblox account, and links the coin's pump.fun page, so you can check each one yourself.</p>
 	</div>
 </section>
 
@@ -88,7 +88,7 @@
 			<div class="card"><h3>Withdrawals</h3><p>Paste any Solana address and the amount; the bank shows the fee and what arrives before you confirm. Earned $SHELL can leave once your Street Cred reaches 100, after a few days of play.</p></div>
 			<div class="card"><h3>Limits and holds</h3><p>Per-withdrawal and daily limits are set from the launch price and shown in the bank. A player can make 3 withdrawals per 10 minutes. Payouts to a wallet shared by several accounts are held for a person to check.</p></div>
 			<div class="card"><h3>A ledger you can't edit</h3><p>Every movement of money is written twice, out of one account and into another, and the two must match. Entries can be added but never changed or deleted.</p></div>
-			<div class="card"><h3>Books checked against the chain</h3><p>Every hour the city's records are compared with what its Solana accounts actually hold, and the result is written down. A difference raises an alarm; nothing is quietly corrected.</p></div>
+			<div class="card"><h3>Books checked against the chain</h3><p>Every day the city's records are compared with what its Solana accounts actually hold, and the result is written down. A difference raises an alarm; nothing is quietly corrected.</p></div>
 			<div class="card"><h3>A pause button</h3><p>Payouts can be paused with one setting. Requests keep their place in the queue and nothing is lost.</p></div>
 		</div>
 		<p class="note">Fees are 5% under 2,500 $SHELL, 3% up to 25,000 and 1.5% above, with a smallest fee of 1 $SHELL; they may be adjusted to the launch price. See <a href="shell.html">how the money works</a> for wages, Street Cred and fees.</p>
@@ -104,19 +104,17 @@
 			</div>
 			<p class="lede">Devnet is Solana's free test network: the same software as the real one, with coins that have no value. These are real, public transactions on it.</p>
 		</div>
-		<h3 class="proof-sub">Earlier devnet test of the in-game launch flow, 7 November 2026</h3>
+		<h3 class="proof-sub">Devnet test of the pump.fun launch, 8 November 2026</h3>
 		<div class="table-scroll reveal">
 			<table class="proof stack">
 				<thead><tr><th>Step</th><th>What happened</th><th>Transaction</th></tr></thead>
 				<tbody>
-					<tr><td>Launch press</td><td>Pressed in game. Its memo names Roblox place 130170912798923, the game server and place version 57</td><td><a href="https://solscan.io/tx/5oSZsGDX4BzQPs1vnwzjstV75CkFKagaSeGan5bKas1xM2Rng6cAnY4eW6vQyEfnGwpYMcujYERaRSNZ8HGHNFqF?cluster=devnet" rel="noopener">5oSZsGDX…8HGHNFqF</a></td></tr>
-					<tr><td>First buy to the treasury</td><td>Every coin from the first buy moved to the treasury; its memo points back to the launch</td><td><a href="https://solscan.io/tx/3V6wueEv5aS2NcHa3Ft1dRDGC7gDupiHwttfsfTkmkATWYrMjq3bTcbNN9gToxW4EQhyutTivMhDonefwU8D8BtU?cluster=devnet" rel="noopener">3V6wueEv…wU8D8BtU</a></td></tr>
-					<tr><td>Fee claim to the treasury</td><td>The launch's trading fees collected and sent to the treasury</td><td><a href="https://solscan.io/tx/5Nr5iKJAGtkFZfi4LohRoV4WzFhUsDQHxBg7XRyf487eE4EjrbX7ZdXzQottGnU6qZ4DbiJnVzFwL5SCLJKKjtPt?cluster=devnet" rel="noopener">5Nr5iKJA…LJKKjtPt</a></td></tr>
+					<tr><td>Launch press</td><td>The coin created on pump.fun with its first buy, signed by a fresh launch wallet. Its memo names Roblox place 130170912798923, the game server and place version 57</td><td><a href="https://solscan.io/tx/4QCqhnJiLP7osSothGHjaqotcJstSLWfbRzDjC1D5B3Eck9C2tKGgUjfj5niba49z9SbGDdQoHCQFvMxt2jWGetP?cluster=devnet" rel="noopener">4QCqhnJi…t2jWGetP</a></td></tr>
+					<tr><td>First buy to the treasury</td><td>Every coin from the first buy moved to the treasury; its memo points back to the launch</td><td><a href="https://solscan.io/tx/4YJkUsqbg2TBc7Q6FCn3L6C9CNmFJqsuNYy7HwcRCwbLzk1pCyzXS3QWEQ4niKhV2J42cL948vVdAShcN6oxX2i2?cluster=devnet" rel="noopener">4YJkUsqb…N6oxX2i2</a></td></tr>
+					<tr><td>Fee claim to the treasury</td><td>The coin's creator fee from a later trade, claimed by the launch wallet and sent to the treasury in the same transaction</td><td><a href="https://solscan.io/tx/2riwgCm2UbF4ZeNtuRHCad7XXn1WF2TZL2SSc7m189DJKdnGmBPraVchEDRj6FFc44oBT1oDqZMWbzgqj8HYK64h?cluster=devnet" rel="noopener">2riwgCm2…j8HYK64h</a></td></tr>
 				</tbody>
 			</table>
 		</div>
-		<p class="note">This test used an earlier version of the launch flow, built for a different launch venue. The pump.fun version's devnet transactions will be added here.</p>
-		<!-- PUMPFUN-DEVNET-PROOFS: add the pump.fun-version devnet launch, first-buy and fee-claim rows here as a second table (same format as above) when they land. -->
 		<h3 class="proof-sub">Devnet test of the full money loop, 30 October 2026</h3>
 		<p style="color:var(--chalk-dim);margin:0 0 10px">Deposit, trade, buyback and burn, and withdrawal, each a public transaction: <a href="shell.html#proof" style="color:var(--teal)">see the table</a>.</p>
 	</div>
