@@ -77,8 +77,10 @@
 
 	// Before launch day the site carries <body data-stage="prelaunch"> (go-live.mjs's merge of raydium-live drops it).
 	// Until then an unreachable record (the route not deployed yet answers without CORS) still means not launched.
-	const notLaunched = () => headline("Not launched yet", "$SHELL has not launched. When it does, this page shows the public transactions and Roblox records of the launch.");
+	// After it, a 404 means the backend has not published the record yet (SHELL_CA_PUBLIC is not true).
 	const prelaunch = document.body.dataset.stage === "prelaunch";
+	const notLaunched = () => headline("Not launched yet", "$SHELL has not launched. When it does, this page shows the public transactions and Roblox records of the launch.");
+	const notPublished = () => headline("Launch record not published yet", "The public transactions and Roblox records of $SHELL's launch go up on this page once they are published. Check back soon.");
 
 	(async () => {
 		let res;
@@ -90,7 +92,8 @@
 			return;
 		}
 		if (res.status === 404) {
-			notLaunched();
+			if (prelaunch) notLaunched();
+			else notPublished();
 			return;
 		}
 		let body = null;
