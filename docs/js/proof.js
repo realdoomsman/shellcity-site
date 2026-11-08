@@ -75,16 +75,22 @@
 		$("recordings-empty").hidden = items.length > 0;
 	}
 
+	// Before launch day the site carries <body data-stage="prelaunch"> (go-live.mjs's merge of raydium-live drops it).
+	// Until then an unreachable record (the route not deployed yet answers without CORS) still means not launched.
+	const notLaunched = () => headline("Not launched yet", "$SHELL has not launched. When it does, this page shows the public transactions and Roblox records of the launch.");
+	const prelaunch = document.body.dataset.stage === "prelaunch";
+
 	(async () => {
 		let res;
 		try {
 			res = await fetch(API, { cache: "no-store", headers: { accept: "application/json" } });
 		} catch {
-			headline("Can't reach the launch record", "The launch record could not be loaded. Check your connection and try again later.");
+			if (prelaunch) notLaunched();
+			else headline("Can't reach the launch record", "The launch record could not be loaded. Check your connection and try again later.");
 			return;
 		}
 		if (res.status === 404) {
-			headline("Not launched yet", "$SHELL has not launched. When it does, this page shows the public transactions and Roblox records of the launch.");
+			notLaunched();
 			return;
 		}
 		let body = null;

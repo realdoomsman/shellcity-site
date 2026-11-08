@@ -3,23 +3,24 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>Shell City — a Roblox city where the money is real</title>
-<meta name="description" content="Shell City is a Roblox city of eight districts and 29 jobs. Every wage is paid from what other players spent, never printed, and what you earn can leave the game as $SHELL on Solana. Coming soon.">
+<title>Shell City — a Roblox city that runs on $SHELL</title>
+<meta name="description" content="Shell City is a Roblox city of eight districts and 29 jobs. Wages are never printed: they come from each business's wage pot, and what you earn can leave the game as $SHELL on Solana. $SHELL launches on pump.fun from inside the game. Coming soon.">
 <meta name="theme-color" content="#0d121c">
 <link rel="canonical" href="https://shellcity.fun/">
 <link rel="icon" href="img/favicon.svg" type="image/svg+xml">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="Shell City">
 <meta property="og:title" content="Shell City — Work. Explore. Live it.">
-<meta property="og:description" content="A Roblox city of eight districts where every wage is paid from what other players spent. Coming soon.">
+<meta property="og:description" content="A Roblox city of eight districts and 29 jobs, where wages are never printed. $SHELL launches on pump.fun from inside the game. Coming soon.">
 <meta property="og:url" content="https://shellcity.fun/">
 <meta property="og:image" content="https://shellcity.fun/img/og.jpg">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:site" content="@ShellCityFun">
 <link rel="preload" href="fonts/BebasNeue.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="preload" href="fonts/Inter.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="img/hero.jpg" as="image" fetchpriority="high">
 <link rel="stylesheet" href="css/site.css">
-<script type="application/ld+json">{"@context":"https://schema.org","@type":"VideoGame","name":"Shell City","url":"https://shellcity.fun/","gamePlatform":"Roblox","genre":"Roleplay","description":"A Roblox city of eight districts where every wage is paid from what other players spent.","sameAs":["https://x.com/ShellCityFun","https://www.tiktok.com/@shellcityfun","https://www.instagram.com/shellcityfun/"]}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"VideoGame","name":"Shell City","url":"https://shellcity.fun/","gamePlatform":"Roblox","genre":"Roleplay","description":"A Roblox city of eight districts and 29 jobs, where wages are never printed and the money is $SHELL on Solana.","sameAs":["https://x.com/ShellCityFun","https://www.tiktok.com/@shellcityfun","https://www.instagram.com/shellcityfun/","https://www.roblox.com/games/130170912798923"]}</script>
 </head>
 <body>
 <a class="skip" href="#main">Skip to content</a>
@@ -28,14 +29,17 @@
 	<div class="wrap">
 		<a class="brand" href="./" aria-label="Shell City home"><img src="img/wordmark.svg" alt="Shell City" width="150" height="34"></a>
 		<button class="nav-toggle" aria-expanded="false" aria-controls="links" aria-label="Menu">
-			<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+			<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
 		</button>
 		<nav class="nav-links" id="links" aria-label="Main">
 			<a href="#city">The city</a>
-			<a href="#districts">Districts</a>
-			<a href="#money">$SHELL</a>
+			<a href="#jobs">Jobs</a>
+			<a href="#business">Businesses</a>
+			<a href="#economy">Economy</a>
+			<a href="#launch">$SHELL</a>
+			<a href="#play">How to play</a>
 			<a href="#faq">FAQ</a>
-			<a class="btn btn-primary" href="https://www.roblox.com/games/130170912798923/Shell-City" rel="noopener">Roblox</a>
+			<a class="btn btn-primary" href="https://www.roblox.com/games/130170912798923" rel="noopener">Roblox</a>
 		</nav>
 	</div>
 </header>
@@ -44,26 +48,39 @@
 
 <section class="hero" aria-labelledby="hero-title">
 	<div class="hero-media">
-		<video autoplay muted loop playsinline preload="auto" poster="img/hero.jpg" aria-hidden="true">
-			<source src="media/hero.webm" type='video/webm; codecs="av01.0.08M.08"'>
-			<source src="media/hero.mp4" type="video/mp4">
+		<video muted loop playsinline autoplay preload="none" poster="img/hero.jpg" aria-hidden="true">
+			<source data-src="media/hero.webm" type='video/webm; codecs="av01.0.08M.08"'>
+			<source data-src="media/hero.mp4" type="video/mp4">
 		</video>
 	</div>
 	<div class="wrap hero-inner">
-		<div class="status"><i></i> Coming soon to Roblox</div>
-		<img class="hero-logo" src="img/logo.svg" alt="" width="692" height="212">
-		<h1 id="hero-title">Shell City</h1>
-		<p class="tagline">Work. Explore. Live it.</p>
-		<p class="lede">A seaside city on Roblox with eight districts and 29 jobs. Every wage is paid out of what other players spent there, never printed, and what you earn can leave the game as $SHELL on Solana.</p>
-		<div class="hero-actions">
-			<a class="btn btn-primary" href="https://www.roblox.com/games/130170912798923/Shell-City" rel="noopener">
-				<svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M5.6 2 2 18.4 18.4 22 22 5.6 5.6 2Zm8.1 12.9-4.6-1 1-4.6 4.6 1-1 4.6Z"/></svg>
-				Shell City on Roblox
-			</a>
-			<a class="btn btn-ghost" href="https://x.com/ShellCityFun" rel="noopener">
-				<svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.8 3h3.2l-7 8 8.2 10h-6.4l-5-6.5L4.9 21H1.7l7.5-8.6L1.4 3h6.6l4.5 6 5.3-6Zm-1.1 16h1.8L7.4 4.9H5.5L16.7 19Z"/></svg>
-				Follow for launch
-			</a>
+		<div>
+			<div class="status"><i></i> Coming soon to Roblox</div>
+			<img class="hero-logo" src="img/logo.svg" alt="" width="692" height="212">
+			<h1 id="hero-title">Shell City</h1>
+			<p class="tagline">Work. Explore. Live it.</p>
+			<p class="lede">A seaside city on Roblox with eight districts and 29 jobs. Clock in, get paid, rent a stall, claim a business. Wages are never printed, and the city's money is $SHELL, a token on Solana.</p>
+			<div class="hero-actions">
+				<a class="btn btn-primary" href="https://www.roblox.com/games/130170912798923" rel="noopener">
+					<svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M5.6 2 2 18.4 18.4 22 22 5.6 5.6 2Zm8.1 12.9-4.6-1 1-4.6 4.6 1-1 4.6Z"/></svg>
+					Shell City on Roblox
+				</a>
+				<a class="btn btn-ghost" href="https://x.com/ShellCityFun" rel="noopener">
+					<svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.8 3h3.2l-7 8 8.2 10h-6.4l-5-6.5L4.9 21H1.7l7.5-8.6L1.4 3h6.6l4.5 6 5.3-6Zm-1.1 16h1.8L7.4 4.9H5.5L16.7 19Z"/></svg>
+					Follow for launch
+				</a>
+			</div>
+		</div>
+		<div class="hero-card" role="region" aria-labelledby="hero-card-title">
+			<p class="eyebrow">$SHELL</p>
+			<h2 id="hero-card-title">Launches from inside the city</h2>
+			<p>$SHELL launches on pump.fun from inside Shell City, paired with SOL. Not before, and not from a website.</p>
+			<ul>
+				<li>Every city coin is paired with $SHELL</li>
+				<li>The launch record goes up on the proof page</li>
+				<li>No wallet needed to play</li>
+			</ul>
+			<a class="more" href="#launch">How the launch works →</a>
 		</div>
 	</div>
 </section>
@@ -85,10 +102,10 @@
 	<div class="wrap">
 		<div class="section-head reveal">
 			<div>
-				<p class="eyebrow">A day in the city</p>
+				<p class="eyebrow">What Shell City is</p>
 				<h2 id="city-title">Clock in. Get paid.<br>Build a life.</h2>
 			</div>
-			<p class="lede">No grind wall and no paywall. You walk off the bus with nothing, and the city looks after you while you find your feet.</p>
+			<p class="lede">A living city on Roblox where players do the work, run the shops and spend the money. You walk off the bus with nothing, and the city looks after you while you find your feet.</p>
 		</div>
 		<div class="day">
 			<article class="step reveal">
@@ -100,11 +117,11 @@
 				<div><h3>Work</h3><p>Pick a job off the board: pump the fountain, flip burgers, run a market stall, work the docks. Each one is its own short minigame.</p></div>
 			</article>
 			<article class="step reveal">
-				<figure><img src="img/day-paid.jpg" alt="A player checking the phone on the street after a shift" loading="lazy" width="800" height="600"></figure>
-				<div><h3>Get paid</h3><p>Every task pays its posted price by the stars you earn. The money comes from the business's wage pot, filled by what players spend there.</p></div>
+				<figure><img src="img/day-paid.jpg" alt="Players on benches by the market stalls in the Corner's square" loading="lazy" width="800" height="600"></figure>
+				<div><h3>Get paid</h3><p>Every task pays its posted price by the stars you earn, out of the business's wage pot. Nothing is printed to pay you.</p></div>
 			</article>
 			<article class="step reveal">
-				<figure><img src="img/day-spend.jpg" alt="Inside a lit tea room with its menu on the wall" loading="lazy" width="800" height="600"></figure>
+				<figure><img src="img/day-spend.jpg" alt="A lit tea-room shopfront on a city street at night" loading="lazy" width="800" height="600"></figure>
 				<div><h3>Live</h3><p>Eat, rent a stall, grow a garden, dance with a crowd at the Drop, and save up for a place of your own in the Heights.</p></div>
 			</article>
 		</div>
@@ -121,14 +138,71 @@
 			<p class="lede">From the harbour cranes to the neon of the Strip, every district has its own streets, sounds, people and work, from day to night and through the rain.</p>
 		</div>
 		<div class="districts">
-			<article class="district reveal"><img src="img/d-corner.jpg" alt="The Corner" loading="lazy"><div class="body"><span class="sign">The Corner</span><p>Arrival and first wages: free water, soup and work.</p></div></article>
-			<article class="district reveal"><img src="img/d-market.jpg" alt="Market Street" loading="lazy"><div class="body"><span class="sign">Market Street</span><p>Food and trade: stalls, the Saturday Drop, the stage.</p></div></article>
-			<article class="district reveal"><img src="img/d-exchange.jpg" alt="The Exchange" loading="lazy"><div class="body"><span class="sign">The Exchange</span><p>Money: the bank, the trading floor, Civic Square.</p></div></article>
-			<article class="district reveal"><img src="img/d-docks.jpg" alt="The Docks" loading="lazy"><div class="body"><span class="sign">The Docks</span><p>Heavy work: cranes, freight, scrap.</p></div></article>
-			<article class="district reveal"><img src="img/d-strip.jpg" alt="The Strip" loading="lazy"><div class="body"><span class="sign">The Strip</span><p>Night and nerve: the Venue, the arcade, races.</p></div></article>
-			<article class="district reveal"><img src="img/d-waterfront.jpg" alt="The Waterfront" loading="lazy"><div class="body"><span class="sign">The Waterfront</span><p>Rest and water: park, beach, fishing.</p></div></article>
-			<article class="district reveal"><img src="img/d-heights.jpg" alt="The Heights" loading="lazy"><div class="body"><span class="sign">The Heights</span><p>Homes and growing: studios, houses, the Lots.</p></div></article>
-			<article class="district reveal"><img src="img/d-outskirts.jpg" alt="The Outskirts" loading="lazy"><div class="body"><span class="sign">The Outskirts</span><p>Speed and the edge: the Ring, the quarry, the truck stop.</p></div></article>
+			<article class="district reveal"><img src="img/d-corner.jpg" alt="The Corner: the square with the fountain and job boards" loading="lazy" width="600" height="800"><div class="body"><h3 class="sign">The Corner</h3><p>Arrival and first wages: free water, soup and work.</p></div></article>
+			<article class="district reveal"><img src="img/d-market.jpg" alt="Market Street: the clock tower and the market hall" loading="lazy" width="600" height="800"><div class="body"><h3 class="sign">Market Street</h3><p>Food and trade: stalls, the Saturday Drop, the stage.</p></div></article>
+			<article class="district reveal"><img src="img/d-exchange.jpg" alt="The Exchange: office towers in the financial district" loading="lazy" width="600" height="800"><div class="body"><h3 class="sign">The Exchange</h3><p>Money: the bank, the trading floor, Civic Square.</p></div></article>
+			<article class="district reveal"><img src="img/d-docks.jpg" alt="The Docks at night: containers under a full moon" loading="lazy" width="600" height="800"><div class="body"><h3 class="sign">The Docks</h3><p>Heavy work: cranes, freight, scrap.</p></div></article>
+			<article class="district reveal"><img src="img/d-strip.jpg" alt="The Strip at night: neon lights around the arcade" loading="lazy" width="600" height="800"><div class="body"><h3 class="sign">The Strip</h3><p>Night and nerve: the Venue, the arcade, races.</p></div></article>
+			<article class="district reveal"><img src="img/d-waterfront.jpg" alt="The Waterfront: the bay under an evening sky" loading="lazy" width="600" height="800"><div class="body"><h3 class="sign">The Waterfront</h3><p>Rest and water: park, beach, fishing.</p></div></article>
+			<article class="district reveal"><img src="img/d-heights.jpg" alt="The Heights at sunset: houses above the city" loading="lazy" width="600" height="800"><div class="body"><h3 class="sign">The Heights</h3><p>Homes and growing: studios, houses, the Lots.</p></div></article>
+			<article class="district reveal"><img src="img/d-outskirts.jpg" alt="The Outskirts: open ground at the edge of the city" loading="lazy" width="600" height="800"><div class="body"><h3 class="sign">The Outskirts</h3><p>Speed and the edge: the Ring, the quarry, the truck stop.</p></div></article>
+		</div>
+	</div>
+</section>
+
+<section id="jobs" aria-labelledby="jobs-title" style="padding-top:0">
+	<div class="wrap">
+		<div class="section-head reveal">
+			<div>
+				<p class="eyebrow">Jobs</p>
+				<h2 id="jobs-title">29 jobs.<br>16 minigames.</h2>
+			</div>
+			<p class="lede">Every job is a short, hands-on minigame: flip, ladle, chop, sort, drive a forklift, work a crane. Do it well and the stars go up.</p>
+		</div>
+		<div class="jobs-grid">
+			<figure class="shot reveal">
+				<img src="img/job-shift.jpg" alt="A Fountain Pump shift in the game: the player at the pump with the minigame panel reading 'Pump: keep the needle in the band'" loading="lazy" width="1280" height="720">
+				<figcaption>A Fountain Pump shift: keep the needle in the band to earn stars.</figcaption>
+			</figure>
+			<div class="job-groups reveal">
+				<div><h3>Burger Stand</h3><ul class="chips"><li>Grill</li><li>Register</li><li>Assembly</li><li>Window</li><li>Cleanup</li><li>Courier</li></ul></div>
+				<div><h3>Soup Kitchen, Fountain, Park</h3><ul class="chips"><li>Soup Prep</li><li>Soup Service</li><li>Kitchen Cleanup</li><li>Fountain Pump</li><li>Water Carrier</li><li>Quality Inspector</li><li>Bench Repair</li><li>Park Care</li><li>Park Guide</li></ul></div>
+				<div><h3>The Docks</h3><ul class="chips"><li>Crane Operator</li><li>Forklift Driver</li><li>Scrap Sorter</li><li>Loader</li><li>Freight Hand</li><li>Canteen Cook</li><li>Canteen Register</li></ul></div>
+				<div><h3>The Strip and the Waterfront</h3><ul class="chips"><li>Soda Pourer</li><li>Bar Back</li><li>Arcade Tech</li><li>Change Booth</li><li>Stagehand</li><li>Lighting Tech</li><li>Bait Counter</li></ul></div>
+				<p style="margin:0;color:var(--chalk-dim);font-size:15.5px">Plus cook and register posts at every market stall, and senior posts once you know the work.</p>
+			</div>
+		</div>
+		<div class="stars-row reveal" aria-label="Pay by stars">
+			<div><b aria-hidden="true">★★★</b><span>100%</span><p style="margin:0;font-size:14px;color:var(--chalk-dim)">Three stars: the full posted price</p></div>
+			<div><b aria-hidden="true">★★</b><span>80%</span><p style="margin:0;font-size:14px;color:var(--chalk-dim)">Two stars</p></div>
+			<div><b aria-hidden="true">★</b><span>30%</span><p style="margin:0;font-size:14px;color:var(--chalk-dim)">One star</p></div>
+		</div>
+		<p class="note">Your first 90 paid minutes each day pay in full; after that, pay tapers. A business can only pay what is in its wage pot.</p>
+	</div>
+</section>
+
+<section id="business" aria-labelledby="business-title" style="padding-top:0">
+	<div class="wrap">
+		<div class="section-head reveal">
+			<div>
+				<p class="eyebrow">Businesses</p>
+				<h2 id="business-title">Run the shop,<br>not just the till.</h2>
+			</div>
+			<p class="lede">Some businesses belong to the city. Others can be claimed by a player, and every market stall can be rented by the day.</p>
+		</div>
+		<div class="biz">
+			<article class="reveal">
+				<figure><img src="img/f-shops.jpg" alt="Shop windows along a street, each lit with a stocked room inside" loading="lazy" width="1280" height="720"></figure>
+				<div class="body"><h3>Claim a business</h3><p>The Burger Stand, Harbour Canteen, Fish Market, Pine &amp; Brass, the Strip Soda Bar and the Neon Arcade can each be claimed by a player. The owner chooses how much of the takings goes to the wage pot and how much to the till.</p></div>
+			</article>
+			<article class="reveal">
+				<figure><img src="img/d-market.jpg" alt="Market Street with the clock tower and the market hall" loading="lazy" width="600" height="800"></figure>
+				<div class="body"><h3>Rent a stall</h3><p>24 stalls on Market Street, from pierogi and pho to bubble tea and churros. Rent one for a day, set your own price within its range, and hire a cook and a register.</p></div>
+			</article>
+			<article class="reveal">
+				<figure><img src="img/cta.jpg" alt="The Corner at night: the fountain, the free soup sign and the job boards" loading="lazy" width="1600" height="900"></figure>
+				<div class="body"><h3>The free tier</h3><p>The Soup Kitchen, the Fountain and the Park Bench are always open and always free. Their wage pots also get every withdrawal fee, so they pay the people who keep them running.</p></div>
+			</article>
 		</div>
 	</div>
 </section>
@@ -136,7 +210,7 @@
 <section aria-label="What you can do" style="padding-top:0">
 	<div class="wrap">
 		<div class="feature reveal">
-			<div class="shot portrait"><img src="img/f-phone.jpg" alt="The in-game phone open on its home screen of apps" loading="lazy"></div>
+			<div class="shot portrait"><img src="img/f-phone.jpg" alt="The in-game phone open on its home screen of apps" loading="lazy" width="568" height="740"></div>
 			<div>
 				<p class="eyebrow">Your phone</p>
 				<h3>The whole city in your pocket</h3>
@@ -149,71 +223,101 @@
 			</div>
 		</div>
 		<div class="feature flip reveal">
-			<div class="shot"><img src="img/f-shops.jpg" alt="Shop windows along the street, each lit with a stocked room inside" loading="lazy"></div>
-			<div>
-				<p class="eyebrow">A city that lives</p>
-				<h3>Look through any window</h3>
-				<p>The bakery has bread on the racks, the tea room has its menu up, the chip shop's fryers are on. Walkers fill the pavements, buses run Route 1 and vans carry the town's shops on their sides.</p>
-				<ul class="ticks">
-					<li>A full day and night, and real rain</li>
-					<li>Every district with its own sound</li>
-					<li>Free bikes from minute one, then scooters and cars</li>
-				</ul>
-			</div>
-		</div>
-		<div class="feature reveal">
-			<div class="shot"><img src="img/f-together.jpg" alt="A player dancing in the square at night" loading="lazy"></div>
+			<div class="shot"><img src="img/f-together.jpg" alt="The Corner's square at night: the fountain, the job boards and the free soup sign" loading="lazy" width="1280" height="720"></div>
 			<div>
 				<p class="eyebrow">Together</p>
 				<h3>Better with people</h3>
 				<p>Work a shift next to a friend, take turns as Shift Lead, dance in sync with a crowd and catch the Saturday Drop: a weekly stage show with limited paints and a city vote.</p>
 				<ul class="ticks">
-					<li>Synced emotes that earn XP with three or more</li>
+					<li>A full day and night, and real rain</li>
 					<li>Worker of the Day for every business</li>
-					<li>A city jar that opens the Venue for everyone</li>
+					<li>Free bikes from minute one, then scooters and cars</li>
 				</ul>
 			</div>
 		</div>
 	</div>
 </section>
 
-<section class="money" id="money" aria-labelledby="money-title">
+<section class="money" id="economy" aria-labelledby="economy-title">
 	<div class="wrap money-grid">
 		<div class="reveal">
-			<p class="eyebrow">$SHELL</p>
-			<h2 id="money-title">The city where<br>the money is real.</h2>
-			<p class="lede" style="margin-top:22px">$SHELL is a Solana token. Inside Shell City it is simply money: what you earn, spend and save. Outside, it is yours to keep.</p>
+			<p class="eyebrow">The city economy</p>
+			<h2 id="economy-title">Spent here,<br>paid here.</h2>
+			<p class="lede" style="margin-top:22px">Inside Shell City, $SHELL is simply money: what you earn, spend and save. Every price, fee and wage follows the same few rules.</p>
 			<ol class="promises">
-				<li><div><b>No printed wages</b><span>Every wage comes out of what players spent at that business. The only coin the game ever creates is a one-time 2,500 $SHELL start grant.</span></div></li>
+				<li><div><b>No printed wages</b><span>Wages come out of each business's wage pot, filled by what players spend there and a slow hourly release from the city's payroll fund. No coin is minted to pay anyone.</span></div></li>
 				<li><div><b>One price, on chain</b><span>Every price comes from an on-chain pool. The game never makes one up.</span></div></li>
 				<li><div><b>No wallet connect, no keys</b><span>You never connect a wallet or see a private key. Withdraw to any Solana address when you want to.</span></div></li>
 				<li><div><b>Free means free</b><span>Soup, water and a bench always work, just slowly. Nobody pays to play.</span></div></li>
 				<li><div><b>No hidden costs</b><span>Every price, fee and loss is shown at the moment you decide.</span></div></li>
 			</ol>
 			<div class="flow" aria-label="Where a purchase goes">
-				<div><b>85%</b><span>to the business, which pays its workers</span></div>
-				<div><b>10%</b><span>to its coin's buyback, then burned on chain</span></div>
+				<div><b>85%</b><span>to the business: its wage pot, and its owner's till if it has one</span></div>
+				<div><b>10%</b><span>to its coin's buyback and burn; to the treasury until city coins open</span></div>
 				<div><b>5%</b><span>to the city treasury</span></div>
 			</div>
 			<p style="margin-top:30px"><a class="btn btn-ghost" href="shell.html">How $SHELL works</a></p>
-			<p class="note">$SHELL is proven on Solana devnet, with public signatures. It launches on pump.fun, from inside the game. Earnings are never guaranteed, and nothing here is financial advice.</p>
 		</div>
-		<aside class="payslip reveal" aria-label="An example payslip">
+		<div class="payslip reveal" role="region" aria-label="An example payslip">
 			<header><b>Payslip</b><span>Fountain pump</span></header>
 			<dl>
 				<dt>Tasks done</dt><dd class="num">12</dd>
-				<dt>Rating</dt><dd class="stars">★★★</dd>
+				<dt>Rating</dt><dd class="stars"><span aria-hidden="true">★★★</span><span class="sr">3 stars</span></dd>
 				<dt>Star share</dt><dd class="num">100%</dd>
 				<dt>Paid from</dt><dd>Fountain wage pot</dd>
 				<dt>Printed</dt><dd class="num">0.00</dd>
 			</dl>
 			<dl class="total"><dt>Shift total</dt><dd class="num">paid in $SHELL</dd></dl>
 			<footer>Three stars pay the full posted price, two pay 80%, one pays 30%. A business can only pay what is in its pot.</footer>
-		</aside>
+		</div>
 	</div>
 </section>
 
-<section aria-labelledby="gallery-title">
+<section class="launch" id="launch" aria-labelledby="launch-title">
+	<div class="wrap">
+		<div class="section-head reveal">
+			<div>
+				<p class="eyebrow">The $SHELL launch</p>
+				<h2 id="launch-title">Launched from<br>inside the game.</h2>
+			</div>
+			<p class="lede">$SHELL launches on pump.fun from inside Shell City, paired with SOL. The launch is made from a live Roblox game server, and the record of it goes up for anyone to check.</p>
+		</div>
+		<div class="pairs reveal" aria-label="How the coins are paired">
+			<div class="tok"><b>SOL</b><span>Solana's own coin</span></div>
+			<div class="link">paired</div>
+			<div class="tok main"><b>$SHELL</b><span>the city's money</span></div>
+			<div class="link">paired</div>
+			<div class="tok"><b>City coins</b><span>one for each business, more later</span></div>
+		</div>
+		<div class="cards reveal">
+			<div class="card"><h3>From inside the city</h3><p>The launch is made in game, on a live server, by Shell City's owner. Not from a website, and not before the city is ready.</p></div>
+			<div class="card"><h3>City coins</h3><p>Every city coin is paired with $SHELL: each business's coin and, later, coins players launch from the trading terminal. City coins open after $SHELL launches.</p></div>
+			<div class="card"><h3>Check the record</h3><p>Once $SHELL launches, the <a href="proof/" style="color:var(--teal)">proof page</a> lists the launch transactions, the on-chain memo, the game server and the place version, so you can check each one.</p></div>
+		</div>
+		<p class="note">$SHELL is not live or tradable yet. Until it launches, any token using the name is not ours. Only trust links from shellcity.fun and @ShellCityFun.</p>
+	</div>
+</section>
+
+<section id="play" aria-labelledby="play-title">
+	<div class="wrap">
+		<div class="section-head reveal">
+			<div>
+				<p class="eyebrow">How to play</p>
+				<h2 id="play-title">Four steps<br>to your first wage.</h2>
+			</div>
+			<p class="lede">Shell City is free on Roblox. You never need a wallet to play, work, earn or spend.</p>
+		</div>
+		<ol class="play reveal">
+			<li><b>Open the game</b><span>Find Shell City on Roblox, on any device Roblox runs on. The doors open on launch day.</span></li>
+			<li><b>Eat and drink free</b><span>Drink at the fountain, eat at the Soup Kitchen and rest on a bench. Free, forever.</span></li>
+			<li><b>Pick a job</b><span>Choose one off the board at the Corner, clock in and finish your shift to get paid.</span></li>
+			<li><b>Build a life</b><span>Spend at the shops, rent a stall, claim a business or save. Withdrawing is optional.</span></li>
+		</ol>
+		<p><a class="btn btn-primary" href="https://www.roblox.com/games/130170912798923" rel="noopener"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M5.6 2 2 18.4 18.4 22 22 5.6 5.6 2Zm8.1 12.9-4.6-1 1-4.6 4.6 1-1 4.6Z"/></svg>Shell City on Roblox</a></p>
+	</div>
+</section>
+
+<section aria-labelledby="gallery-title" style="padding-top:0">
 	<div class="wrap">
 		<div class="section-head reveal">
 			<div>
@@ -223,11 +327,11 @@
 			<p class="lede">Every picture on this site is a screenshot from Shell City, taken in the game.</p>
 		</div>
 		<div class="gallery reveal">
-			<figure class="w4 h2"><img src="img/g1.jpg" alt="Shell City street scene" loading="lazy"></figure>
-			<figure class="w2 h2"><img src="img/g2.jpg" alt="Shell City street scene" loading="lazy"></figure>
-			<figure class="w2 h2"><img src="img/g3.jpg" alt="Shell City street scene" loading="lazy"></figure>
-			<figure class="w2 h2"><img src="img/g4.jpg" alt="Shell City street scene" loading="lazy"></figure>
-			<figure class="w2 h2"><img src="img/g5.jpg" alt="Shell City street scene" loading="lazy"></figure>
+			<figure class="w4 h2"><img src="img/g1.jpg" alt="The Corner at night: the free soup sign, and signposts to the bank, the terminal and jobs" loading="lazy" width="1315" height="740"></figure>
+			<figure class="w2 h2"><img src="img/g2.jpg" alt="The free Shell City Loop bus at a crossing" loading="lazy" width="900" height="675"></figure>
+			<figure class="w2 h2"><img src="img/g3.jpg" alt="The beach on the Waterfront, with a lifeguard tower" loading="lazy" width="900" height="675"></figure>
+			<figure class="w2 h2"><img src="img/g4.jpg" alt="A shopfront lit from inside, its menu in the window" loading="lazy" width="900" height="675"></figure>
+			<figure class="w2 h2"><img src="img/g5.jpg" alt="A street at night with lit windows and streetlights" loading="lazy" width="900" height="675"></figure>
 		</div>
 	</div>
 </section>
@@ -241,28 +345,32 @@
 			</div>
 		</div>
 		<div class="faq reveal">
-			<details><summary>When can I play?</summary><p>Soon. Shell City is finished and in testing, and we will announce the opening on X, TikTok and Instagram first. Follow @ShellCityFun so you don't miss it.</p></details>
+			<details><summary>When can I play?</summary><p>Shell City opens on Roblox the day $SHELL launches. The opening is announced on X, TikTok and Instagram first, so follow @ShellCityFun to catch it.</p></details>
 			<details><summary>Is it free?</summary><p>Yes. Shell City is free to play on Roblox. Food, water and rest are free forever, and your first wage comes from working, not paying.</p></details>
 			<details><summary>Do I need crypto to play?</summary><p>No. You never need a wallet to play, work, earn or spend. $SHELL is just the money inside the city. A wallet only matters if you want to take money out.</p></details>
-			<details><summary>What is $SHELL?</summary><p>$SHELL is a token on Solana. In the game it is the money every wage, price and purchase is counted in. The whole loop (deposit, trade, buyback and burn, withdrawal and daily reconciliation) has been run on Solana devnet with public transactions. $SHELL launches on pump.fun, from inside Shell City, and it is not tradable yet. Every city coin, from the businesses' coins to the ones players launch, is paired with $SHELL.</p></details>
+			<details><summary>What is $SHELL?</summary><p>$SHELL is a token on Solana. In the game it is the money every wage, price and purchase is counted in. The whole loop (deposit, trade, buyback and burn, withdrawal and daily reconciliation) has been run on Solana devnet with public transactions.</p></details>
+			<details><summary>Where does $SHELL launch?</summary><p>On pump.fun, paired with SOL, and the launch is made from inside Shell City. It is not live or tradable yet. When it launches, the launch record goes up at <a href="proof/" style="color:var(--teal)">shellcity.fun/proof</a>.</p></details>
+			<details><summary>What are city coins?</summary><p>Coins for the city's businesses, each paired with $SHELL. Later, players will be able to launch their own from the trading terminal. City coins open after $SHELL launches.</p></details>
 			<details><summary>How do I take money out?</summary><p>Earned $SHELL can leave once your Street Cred reaches 100. You build that up by playing over a few days: paid shifts, a meal or rent, a delivery or repair. You send it to any Solana address you choose, and the fee is shown before you confirm. The 2,500 $SHELL start grant is spendable in the game but never withdrawable.</p></details>
-			<details><summary>Can I lose money?</summary><p>Prices, fees and losses are always shown before you decide. Trading city coins can go down as well as up. Earnings are never guaranteed, and nothing on this site is financial advice.</p></details>
+			<details><summary>Can I lose money?</summary><p>Yes. Token prices can fall as well as rise, and trading city coins can lose money. Prices, fees and losses are always shown before you decide. Earnings are never guaranteed, and nothing on this site is financial advice.</p></details>
+			<details><summary>Will you ever ask for my seed phrase?</summary><p>Never. Shell City never asks for a seed phrase or private key, never asks you to connect a wallet, and never messages you first about money. Anyone who does is not us.</p></details>
 			<details><summary>Who is making it?</summary><p>A small independent studio. Shell City is not made, sponsored or endorsed by Roblox Corporation.</p></details>
 		</div>
+		<p style="margin-top:26px;color:var(--chalk-dim)">More answers on the <a href="help.html" style="color:var(--amber)">help page</a>.</p>
 	</div>
 </section>
 
 <section class="cta" aria-labelledby="cta-title">
-	<img src="img/cta.jpg" alt="" loading="lazy">
+	<img src="img/cta.jpg" alt="" loading="lazy" width="1600" height="900">
 	<div class="wrap">
 		<p class="eyebrow" style="justify-content:center">Coming soon</p>
 		<h2 id="cta-title">See you on the Corner.</h2>
 		<p class="lede">We post the city every day: new districts, new jobs, behind the scenes. Follow along and be first through the door.</p>
 		<div class="socials">
-			<a class="btn btn-primary" href="https://x.com/ShellCityFun" rel="noopener"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.8 3h3.2l-7 8 8.2 10h-6.4l-5-6.5L4.9 21H1.7l7.5-8.6L1.4 3h6.6l4.5 6 5.3-6Zm-1.1 16h1.8L7.4 4.9H5.5L16.7 19Z"/></svg>@ShellCityFun</a>
+			<a class="btn btn-primary" href="https://x.com/ShellCityFun" rel="noopener"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.8 3h3.2l-7 8 8.2 10h-6.4l-5-6.5L4.9 21H1.7l7.5-8.6L1.4 3h6.6l4.5 6 5.3-6Zm-1.1 16h1.8L7.4 4.9H5.5L16.7 19Z"/></svg>@ShellCityFun on X</a>
 			<a class="btn btn-ghost" href="https://www.tiktok.com/@shellcityfun" rel="noopener"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M16.6 2h-3.3v13.2a2.9 2.9 0 1 1-2.9-2.9c.3 0 .6 0 .9.1V9a6.3 6.3 0 1 0 5.3 6.2V8.6a7.9 7.9 0 0 0 4.4 1.4V6.7a4.5 4.5 0 0 1-4.4-4.7Z"/></svg>TikTok</a>
 			<a class="btn btn-ghost" href="https://www.instagram.com/shellcityfun/" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg>Instagram</a>
-			<a class="btn btn-ghost" href="https://www.roblox.com/games/130170912798923/Shell-City" rel="noopener"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M5.6 2 2 18.4 18.4 22 22 5.6 5.6 2Zm8.1 12.9-4.6-1 1-4.6 4.6 1-1 4.6Z"/></svg>Roblox</a>
+			<a class="btn btn-ghost" href="https://www.roblox.com/games/130170912798923" rel="noopener"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M5.6 2 2 18.4 18.4 22 22 5.6 5.6 2Zm8.1 12.9-4.6-1 1-4.6 4.6 1-1 4.6Z"/></svg>Roblox</a>
 		</div>
 	</div>
 </section>
@@ -274,15 +382,15 @@
 		<div class="cols">
 			<div>
 				<img src="img/wordmark.svg" alt="Shell City" width="150" height="34" style="margin-bottom:16px">
-				<p>A Roblox city where every wage is paid from what other players spent.</p>
+				<p>A Roblox city that runs on $SHELL, where wages are never printed.</p>
 			</div>
-			<div><h4>The game</h4><ul><li><a href="#city">The city</a></li><li><a href="#districts">Districts</a></li><li><a href="https://www.roblox.com/games/130170912798923/Shell-City" rel="noopener">On Roblox</a></li></ul></div>
-			<div><h4>$SHELL</h4><ul><li><a href="shell.html">How it works</a></li><li><a href="shell.html#proof">Proof on devnet</a></li><li><a href="shell.html#status">Launch status</a></li><li><a href="proof/">Launch proof</a></li><li><a href="help.html">Help</a></li><li><a href="terms.html">Terms</a></li><li><a href="privacy.html">Privacy</a></li></ul></div>
-			<div><h4>Follow</h4><ul><li><a href="https://x.com/ShellCityFun" rel="noopener">X</a></li><li><a href="https://www.tiktok.com/@shellcityfun" rel="noopener">TikTok</a></li><li><a href="https://www.instagram.com/shellcityfun/" rel="noopener">Instagram</a></li></ul></div>
+			<div><h2>The game</h2><ul><li><a href="#city">The city</a></li><li><a href="#jobs">Jobs</a></li><li><a href="#business">Businesses</a></li><li><a href="#play">How to play</a></li><li><a href="https://www.roblox.com/games/130170912798923" rel="noopener">On Roblox</a></li></ul></div>
+			<div><h2>$SHELL</h2><ul><li><a href="shell.html">How it works</a></li><li><a href="shell.html#proof">Proof on devnet</a></li><li><a href="shell.html#status">Launch status</a></li><li><a href="proof/">Launch proof</a></li><li><a href="help.html">Help</a></li><li><a href="terms.html">Terms</a></li><li><a href="privacy.html">Privacy</a></li></ul></div>
+			<div><h2>Follow</h2><ul><li><a href="https://x.com/ShellCityFun" rel="noopener">X @ShellCityFun</a></li><li><a href="https://www.tiktok.com/@shellcityfun" rel="noopener">TikTok</a></li><li><a href="https://www.instagram.com/shellcityfun/" rel="noopener">Instagram</a></li></ul></div>
 		</div>
 		<div class="legal">
 			<p>© <span id="year">2026</span> Shell City. Shell City is an independent game on Roblox and is not made, sponsored or endorsed by Roblox Corporation. Roblox is a trademark of Roblox Corporation.</p>
-			<p>$SHELL is a digital token on Solana. It is not an investment, nothing on this site is financial advice, and in-game earnings are never guaranteed. $SHELL is not live on mainnet or tradable yet; it will launch on pump.fun, from inside the game.</p>
+			<p class="footer-risk"><strong>Risk:</strong> $SHELL is a digital token on Solana. It is not an investment, nothing on this site is financial advice, and in-game earnings are never guaranteed. Token prices can fall as well as rise and you can lose what you put in. $SHELL is not live on mainnet or tradable yet; it will launch on pump.fun, from inside the game.</p>
 		</div>
 	</div>
 </footer>

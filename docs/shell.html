@@ -31,10 +31,12 @@
 		</button>
 		<nav class="nav-links" id="links" aria-label="Main">
 			<a href="./#city">The city</a>
-			<a href="./#districts">Districts</a>
+			<a href="./#jobs">Jobs</a>
+			<a href="./#business">Businesses</a>
 			<a href="shell.html" aria-current="page">$SHELL</a>
+			<a href="./#play">How to play</a>
 			<a href="./#faq">FAQ</a>
-			<a class="btn btn-primary" href="https://www.roblox.com/games/130170912798923/Shell-City" rel="noopener">Roblox</a>
+			<a class="btn btn-primary" href="https://www.roblox.com/games/130170912798923" rel="noopener">Roblox</a>
 		</nav>
 	</div>
 </header>
@@ -56,15 +58,15 @@
 				<p class="eyebrow">The loop</p>
 				<h2 id="loop-title">Spent here,<br>paid here.</h2>
 			</div>
-			<p class="lede">Nothing is minted to pay a wage. Money goes round: a player buys a burger, part of that pays the person who made it, and part of it makes the city's coins scarcer.</p>
+			<p class="lede">Nothing is minted to pay a wage. Money goes round: a player buys a burger, and part of that pays the person who made it. Wage pots also get a slow hourly release from the city's payroll fund.</p>
 		</div>
 		<div class="cards reveal">
-			<div class="card"><h3>Every purchase</h3><p>85% goes to the business. That fills its wage pot, and its workers are paid only from that pot. 10% goes to the business's coin buyback pool and 5% to the city treasury.</p></div>
-			<div class="card"><h3>Buyback and burn</h3><p>Once a coin's pool holds 10 $SHELL, the city buys that coin on chain and burns it. Busy businesses make their coin scarcer.</p></div>
+			<div class="card"><h3>Every purchase</h3><p>85% goes to the business: its wage pot, and the owner's till if a player owns it. Workers are paid only from the wage pot. 10% goes to the business's coin buyback pool and 5% to the city treasury.</p></div>
+			<div class="card"><h3>Buyback and burn</h3><p>Once city coins open, a coin's pool that holds 1,000 $SHELL buys that coin on chain and burns it. Until then, the 10% goes to the city treasury.</p></div>
 			<div class="card"><h3>Pay by the stars</h3><p>A task pays its posted price by your stars: three stars pay 100%, two pay 80%, one pays 30%. Daily pay tapers after your first 90 paid minutes.</p></div>
 			<div class="card"><h3>One price source</h3><p>Every price in the game comes from an on-chain pool. Our database only caches it, and it is never invented.</p></div>
-			<div class="card"><h3>Own a business</h3><p>Businesses can be claimed by players. The Burger Stand sells a meal for 1.50 $SHELL, and you can claim it for 150 $SHELL.</p></div>
-			<div class="card"><h3>The start grant</h3><p>New players get 2,500 $SHELL to get going. It is the only coin the game ever creates, it can be spent in the city, and it can never be withdrawn.</p></div>
+			<div class="card"><h3>Own a business</h3><p>Some businesses can be claimed by players. The Burger Stand sells a meal for 150 $SHELL, and you can claim it for 15,000 $SHELL. The owner sets how much of the takings goes to the wage pot.</p></div>
+			<div class="card"><h3>The start grant</h3><p>New players get a one-time 2,500 $SHELL to get going. It can be spent in the city, and it can never be withdrawn.</p></div>
 		</div>
 	</div>
 </section>
@@ -80,9 +82,9 @@
 				<div><b class="num">3%</b><span>2,500 to 25,000 $SHELL</span></div>
 				<div><b class="num">1.5%</b><span>above 25,000 $SHELL</span></div>
 			</div>
-			<p style="margin-top:18px;color:var(--chalk-dim)">The smallest fee is 1 $SHELL. Withdrawal fees are shared between the Soup Kitchen, Fountain and Park Bench wage pots, so they pay the people working the free tier.</p>
+			<p style="margin-top:18px;color:var(--chalk-dim)">The smallest fee is 1 $SHELL. Withdrawal fees are shared between the Soup Kitchen, Fountain and Park Bench wage pots, so they pay the people working the free tier. Fees and limits can change; the bank always shows the current ones before you confirm.</p>
 		</div>
-		<aside class="payslip reveal" aria-label="Street Cred">
+		<div class="payslip reveal" role="region" aria-label="Street Cred">
 			<header><b>Street Cred</b><span>reach 100 to withdraw</span></header>
 			<dl>
 				<dt>Account is 72 hours old</dt><dd class="num">+30</dd>
@@ -91,8 +93,8 @@
 				<dt>A delivery, repair or crate job</dt><dd class="num">+20</dd>
 			</dl>
 			<dl class="total"><dt>Total</dt><dd class="num">100</dd></dl>
-			<footer>Below 100, only $SHELL you deposited and have not spent can leave. Limits: 1,000 $SHELL per withdrawal, 5,000 a day.</footer>
-		</aside>
+			<footer>Below 100, only $SHELL you deposited and have not spent can leave. Per-withdrawal and daily limits are shown in the bank.</footer>
+		</div>
 	</div>
 </section>
 
@@ -153,10 +155,9 @@
 		<ul class="status-list reveal">
 			<li><span class="pill done">Done</span><div><b>The city</b><span>Eight districts, 29 jobs, the phone, homes, gardens, vehicles, shops and the weekly Drop, all built and tested.</span></div></li>
 			<li><span class="pill done">Done</span><div><b>The money loop on devnet</b><span>Deposit, trade, buyback and burn, withdrawal and reconciliation, run with real Solana transactions.</span></div></li>
-			<li><span class="pill next">Next</span><div><b>Playtests</b><span>Real players in the city together, timing the first wage and the first week.</span></div></li>
 			<li><span class="pill next">Next</span><div><b>Mainnet</b><span>$SHELL launches on pump.fun, paired with SOL, and the launch is made from inside Shell City. Until then it is not live and not tradable.</span></div></li>
-			<li><span class="pill next">Next</span><div><b>City coins</b><span>Every business coin and every coin a player launches is paired with $SHELL. They open after $SHELL launches.</span></div></li>
-			<li><span class="pill next">Next</span><div><b>Opening the doors</b><span>Shell City goes public on Roblox. Follow @ShellCityFun for the date.</span></div></li>
+			<li><span class="pill next">Next</span><div><b>City coins</b><span>Every business coin, and every coin a player launches later, is paired with $SHELL. They open after $SHELL launches.</span></div></li>
+			<li><span class="pill next">Next</span><div><b>Opening the doors</b><span>Shell City opens on Roblox the day $SHELL launches. Follow @ShellCityFun for the date.</span></div></li>
 		</ul>
 		<p class="note">$SHELL is not an investment and nothing on this site is financial advice. Prices of city coins can fall as well as rise, and in-game earnings are never guaranteed. Shell City is not made, sponsored or endorsed by Roblox Corporation.</p>
 	</div>
@@ -181,15 +182,15 @@
 		<div class="cols">
 			<div>
 				<img src="img/wordmark.svg" alt="Shell City" width="150" height="34" style="margin-bottom:16px">
-				<p>A Roblox city where every wage is paid from what other players spent.</p>
+				<p>A Roblox city that runs on $SHELL, where wages are never printed.</p>
 			</div>
-			<div><h4>The game</h4><ul><li><a href="./#city">The city</a></li><li><a href="./#districts">Districts</a></li><li><a href="https://www.roblox.com/games/130170912798923/Shell-City" rel="noopener">On Roblox</a></li></ul></div>
-			<div><h4>$SHELL</h4><ul><li><a href="#loop-title">How it works</a></li><li><a href="#proof">Proof on devnet</a></li><li><a href="#status">Launch status</a></li><li><a href="proof/">Launch proof</a></li><li><a href="help.html">Help</a></li><li><a href="terms.html">Terms</a></li><li><a href="privacy.html">Privacy</a></li></ul></div>
-			<div><h4>Follow</h4><ul><li><a href="https://x.com/ShellCityFun" rel="noopener">X</a></li><li><a href="https://www.tiktok.com/@shellcityfun" rel="noopener">TikTok</a></li><li><a href="https://www.instagram.com/shellcityfun/" rel="noopener">Instagram</a></li></ul></div>
+			<div><h2>The game</h2><ul><li><a href="./#city">The city</a></li><li><a href="./#jobs">Jobs</a></li><li><a href="./#business">Businesses</a></li><li><a href="./#play">How to play</a></li><li><a href="https://www.roblox.com/games/130170912798923" rel="noopener">On Roblox</a></li></ul></div>
+			<div><h2>$SHELL</h2><ul><li><a href="#loop-title">How it works</a></li><li><a href="#proof">Proof on devnet</a></li><li><a href="#status">Launch status</a></li><li><a href="proof/">Launch proof</a></li><li><a href="help.html">Help</a></li><li><a href="terms.html">Terms</a></li><li><a href="privacy.html">Privacy</a></li></ul></div>
+			<div><h2>Follow</h2><ul><li><a href="https://x.com/ShellCityFun" rel="noopener">X @ShellCityFun</a></li><li><a href="https://www.tiktok.com/@shellcityfun" rel="noopener">TikTok</a></li><li><a href="https://www.instagram.com/shellcityfun/" rel="noopener">Instagram</a></li></ul></div>
 		</div>
 		<div class="legal">
 			<p>© <span id="year">2026</span> Shell City. Shell City is an independent game on Roblox and is not made, sponsored or endorsed by Roblox Corporation. Roblox is a trademark of Roblox Corporation.</p>
-			<p>$SHELL is a digital token on Solana. It is not an investment, nothing on this site is financial advice, and in-game earnings are never guaranteed. $SHELL is not live on mainnet or tradable yet; it will launch on pump.fun, from inside the game.</p>
+			<p class="footer-risk"><strong>Risk:</strong> $SHELL is a digital token on Solana. It is not an investment, nothing on this site is financial advice, and in-game earnings are never guaranteed. Token prices can fall as well as rise and you can lose what you put in. $SHELL is not live on mainnet or tradable yet; it will launch on pump.fun, from inside the game.</p>
 		</div>
 	</div>
 </footer>

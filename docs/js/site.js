@@ -34,12 +34,15 @@
 		items.forEach((el) => el.classList.add("in"));
 	}
 
-	// Save data: a phone on a metered link gets the still, not the loop.
+	// The hero loop (about 7 MB) only loads on a wide screen with motion allowed and no save-data flag.
+	// Phones, metered links and reduced-motion visitors keep the still poster.
 	const video = document.querySelector(".hero video");
 	const conn = navigator.connection;
-	if (video && conn && (conn.saveData || /2g/.test(conn.effectiveType || ""))) {
-		video.removeAttribute("autoplay");
-		video.pause();
+	const lean = conn && (conn.saveData || /2g/.test(conn.effectiveType || ""));
+	if (video && !lean && matchMedia("(min-width: 760px) and (prefers-reduced-motion: no-preference)").matches) {
+		video.querySelectorAll("source[data-src]").forEach((s) => { s.src = s.dataset.src; });
+		video.load();
+		video.play().catch(() => {});
 	}
 
 	const year = document.getElementById("year");
