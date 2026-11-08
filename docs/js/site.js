@@ -35,11 +35,14 @@
 	}
 
 	// The hero loop (about 7 MB) only loads on a wide screen with motion allowed and no save-data flag.
-	// Phones, metered links and reduced-motion visitors keep the still poster.
+	// Phones, metered links and reduced-motion visitors keep the still (a square crop on tall screens).
+	// The loop sits over the still and takes it as its poster, so nothing flashes while it buffers.
 	const video = document.querySelector(".hero video");
+	const still = document.querySelector(".hero-media img");
 	const conn = navigator.connection;
 	const lean = conn && (conn.saveData || /2g/.test(conn.effectiveType || ""));
 	if (video && !lean && matchMedia("(min-width: 760px) and (prefers-reduced-motion: no-preference)").matches) {
+		if (still && still.currentSrc) video.poster = still.currentSrc;
 		video.querySelectorAll("source[data-src]").forEach((s) => { s.src = s.dataset.src; });
 		video.load();
 		video.play().catch(() => {});

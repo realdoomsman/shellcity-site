@@ -104,7 +104,7 @@ p { margin: 0 0 1em; }
 /* ---------- Hero ---------- */
 .hero { position: relative; min-height: 100svh; display: grid; align-items: end; overflow: hidden; isolation: isolate; }
 .hero-media { position: absolute; inset: 0; z-index: -2; }
-.hero-media video, .hero-media img { width: 100%; height: 100%; object-fit: cover; }
+.hero-media video, .hero-media img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; }
 .hero::after {
 	content: ""; position: absolute; inset: 0; z-index: -1;
 	background:
@@ -364,11 +364,12 @@ footer.site .legal { border-top: 1px solid var(--line); padding-top: 22px; displ
 /* ---------- Launch ($SHELL from inside the game) ---------- */
 .launch { background: radial-gradient(1000px 460px at 10% 0%, rgba(242,165,65,.12), transparent 60%), var(--ink); }
 .pairs { display: grid; grid-template-columns: 1fr auto 1fr auto 1fr; align-items: center; gap: 14px; margin: 8px 0 40px; }
-.pairs .tok { border: 1px solid var(--line); background: var(--ink-2); border-radius: var(--radius); padding: 22px; text-align: center; }
+.pairs .tok { align-self: stretch; display: flex; flex-direction: column; justify-content: center; border: 1px solid var(--line); background: var(--ink-2); border-radius: var(--radius); padding: 22px; text-align: center; }
 .pairs .tok b { display: block; font: 400 40px/1 var(--display); letter-spacing: .03em; }
 .pairs .tok span { font-size: 14px; color: var(--chalk-dim); }
 .pairs .tok.main { border-color: var(--amber); box-shadow: 0 0 0 1px var(--amber) inset; }
 .pairs .tok.main b { color: var(--amber); }
+.pairs .tok .coin { width: 56px; height: 56px; margin: 0 auto 12px; border-radius: 12px; box-shadow: 0 0 0 1px rgba(242,165,65,.5); }
 .pairs .link { font: 600 12px/1.3 var(--mono); letter-spacing: .12em; text-transform: uppercase; color: var(--teal); text-align: center; }
 .pairs .link::before { content: "⇄"; display: block; font-size: 26px; letter-spacing: 0; margin-bottom: 4px; }
 @media (max-width: 760px) { .pairs { grid-template-columns: 1fr; } .pairs .link::before { content: "⇅"; } }

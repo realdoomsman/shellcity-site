@@ -8,6 +8,7 @@
 <meta name="theme-color" content="#0d121c">
 <link rel="canonical" href="https://shellcity.fun/">
 <link rel="icon" href="img/favicon-32.png" type="image/png" sizes="32x32">
+<link rel="icon" href="img/favicon-192.png" type="image/png" sizes="192x192">
 <link rel="apple-touch-icon" href="img/apple-touch-icon.png">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="Shell City">
@@ -15,11 +16,14 @@
 <meta property="og:description" content="A Roblox city of eight districts and 29 jobs, where wages are never printed. $SHELL launched on pump.fun from inside the game. Open now.">
 <meta property="og:url" content="https://shellcity.fun/">
 <meta property="og:image" content="https://shellcity.fun/img/og-live.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Shell City: Work. Explore. Live it. Beside it, the $SHELL coin, a pixel city skyline at night.">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:site" content="@ShellCityFun">
+<meta name="twitter:image:alt" content="Shell City: Work. Explore. Live it. Beside it, the $SHELL coin, a pixel city skyline at night.">
 <link rel="preload" href="fonts/BebasNeue.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="preload" href="fonts/Inter.woff2" as="font" type="font/woff2" crossorigin>
-<link rel="preload" href="img/hero.jpg" as="image" fetchpriority="high">
 <link rel="stylesheet" href="css/site.css">
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"VideoGame","name":"Shell City","url":"https://shellcity.fun/","gamePlatform":"Roblox","genre":"Roleplay","description":"A Roblox city of eight districts and 29 jobs, where wages are never printed and the money is $SHELL on Solana.","sameAs":["https://x.com/ShellCityFun","https://www.tiktok.com/@shellcityfun","https://www.instagram.com/shellcityfun/","https://www.roblox.com/games/130170912798923"]}</script>
 </head>
@@ -49,7 +53,11 @@
 
 <section class="hero" aria-labelledby="hero-title">
 	<div class="hero-media">
-		<video muted loop playsinline autoplay preload="none" poster="img/hero.jpg" aria-hidden="true">
+		<picture>
+			<source media="(max-aspect-ratio: 1/1)" srcset="img/hero-sq.webp" width="1080" height="1080">
+			<img src="img/hero.webp" alt="" width="1920" height="1080" fetchpriority="high">
+		</picture>
+		<video muted loop playsinline autoplay preload="none" aria-hidden="true">
 			<source data-src="media/hero.webm" type='video/webm; codecs="av01.0.08M.08"'>
 			<source data-src="media/hero.mp4" type="video/mp4">
 		</video>
@@ -77,7 +85,7 @@
 			<p class="eyebrow">How it works</p>
 			<h2 id="hero-card-title" class="sr">How it works</h2>
 			<ol class="how">
-				<li><b>Play and earn $SHELL</b><span>Pick a job, finish your shift, get paid in $SHELL. Free to play, no wallet needed.</span></li>
+				<li><b>Work and get paid</b><span>Pick a job, finish your shift and you're paid in $SHELL. Free to play, no wallet needed.</span></li>
 				<li><b>Own a business</b><span>Rent a market stall or claim a shop and earn from its sales. Business coins, bought and sold for $SHELL, open soon.</span></li>
 				<li><b>Cash out</b><span>Send the $SHELL you earned to your own Solana wallet, after a few days of play.</span></li>
 			</ol>
@@ -110,19 +118,19 @@
 		</div>
 		<div class="day">
 			<article class="step reveal">
-				<figure><img src="img/day-arrive.jpg" alt="The Corner's fountain and free soup stand at street level" loading="lazy" width="800" height="600"></figure>
+				<figure><img src="img/day-arrive.webp" alt="The Corner's fountain and free soup stand at street level" loading="lazy" width="800" height="600"></figure>
 				<div><h3>Arrive</h3><p>Water at the fountain, soup at the Soup Kitchen and a bench to rest on are free, forever. Grab a free bike and look around.</p></div>
 			</article>
 			<article class="step reveal">
-				<figure><img src="img/day-work.jpg" alt="A player on a Fountain Pump shift, with the pump minigame panel on screen" loading="lazy" width="800" height="600"></figure>
+				<figure><img src="img/day-work.webp" alt="A player on a Fountain Pump shift, with the pump minigame panel on screen" loading="lazy" width="800" height="600"></figure>
 				<div><h3>Work</h3><p>Pick a job off the board: pump the fountain, flip burgers, run a market stall, work the docks. Each one is its own short minigame.</p></div>
 			</article>
 			<article class="step reveal">
-				<figure><img src="img/day-paid.jpg" alt="Players on benches by the market stalls in the Corner's square" loading="lazy" width="800" height="600"></figure>
+				<figure><img src="img/day-paid.webp" alt="Players on benches by the market stalls in the Corner's square" loading="lazy" width="800" height="600"></figure>
 				<div><h3>Get paid</h3><p>Every task pays its posted price by the stars you earn, out of the business's wage pot. Nothing is printed to pay you.</p></div>
 			</article>
 			<article class="step reveal">
-				<figure><img src="img/day-spend.jpg" alt="A lit tea-room shopfront on a city street at night" loading="lazy" width="800" height="600"></figure>
+				<figure><img src="img/day-spend.webp" alt="A lit tea-room shopfront on a city street at night" loading="lazy" width="800" height="600"></figure>
 				<div><h3>Live</h3><p>Eat, rent a stall, grow a garden, dance with a crowd at the Drop, and save up for a place of your own in the Heights.</p></div>
 			</article>
 		</div>
@@ -139,14 +147,14 @@
 			<p class="lede">From the harbour cranes to the neon of the Strip, every district has its own streets, sounds, people and work, from day to night and through the rain.</p>
 		</div>
 		<div class="districts">
-			<article class="district reveal"><img src="img/d-corner.jpg" alt="The Corner: the square with the fountain and job boards" loading="lazy" width="600" height="800"><div class="body"><h3 class="sign">The Corner</h3><p>Arrival and first wages: free water, soup and work.</p></div></article>
-			<article class="district reveal"><img src="img/d-market.jpg" alt="Market Street: the clock tower and the market hall" loading="lazy" width="600" height="800"><div class="body"><h3 class="sign">Market Street</h3><p>Food and trade: stalls, the Saturday Drop, the stage.</p></div></article>
-			<article class="district reveal"><img src="img/d-exchange.jpg" alt="The Exchange: office towers in the financial district" loading="lazy" width="600" height="800"><div class="body"><h3 class="sign">The Exchange</h3><p>Money: the bank, the trading floor, Civic Square.</p></div></article>
-			<article class="district reveal"><img src="img/d-docks.jpg" alt="The Docks at night: containers under a full moon" loading="lazy" width="600" height="800"><div class="body"><h3 class="sign">The Docks</h3><p>Heavy work: cranes, freight, scrap.</p></div></article>
-			<article class="district reveal"><img src="img/d-strip.jpg" alt="The Strip at night: neon lights around the arcade" loading="lazy" width="600" height="800"><div class="body"><h3 class="sign">The Strip</h3><p>Night and nerve: the Venue, the arcade, races.</p></div></article>
-			<article class="district reveal"><img src="img/d-waterfront.jpg" alt="The Waterfront: the bay under an evening sky" loading="lazy" width="600" height="800"><div class="body"><h3 class="sign">The Waterfront</h3><p>Rest and water: park, beach, fishing.</p></div></article>
-			<article class="district reveal"><img src="img/d-heights.jpg" alt="The Heights at sunset: houses above the city" loading="lazy" width="600" height="800"><div class="body"><h3 class="sign">The Heights</h3><p>Homes and growing: studios, houses, the Lots.</p></div></article>
-			<article class="district reveal"><img src="img/d-outskirts.jpg" alt="The Outskirts: open ground at the edge of the city" loading="lazy" width="600" height="800"><div class="body"><h3 class="sign">The Outskirts</h3><p>Speed and the edge: the Ring, the quarry, the truck stop.</p></div></article>
+			<article class="district reveal"><img src="img/d-corner.webp" alt="The Corner: the square with the fountain and job boards" loading="lazy" width="600" height="800"><div class="body"><h3 class="sign">The Corner</h3><p>Arrival and first wages: free water, soup and work.</p></div></article>
+			<article class="district reveal"><img src="img/d-market.webp" alt="Market Street: the clock tower and the market hall" loading="lazy" width="600" height="800"><div class="body"><h3 class="sign">Market Street</h3><p>Food and trade: stalls, the Saturday Drop, the stage.</p></div></article>
+			<article class="district reveal"><img src="img/d-exchange.webp" alt="The Exchange: office towers in the financial district" loading="lazy" width="600" height="800"><div class="body"><h3 class="sign">The Exchange</h3><p>Money: the bank, the trading floor, Civic Square.</p></div></article>
+			<article class="district reveal"><img src="img/d-docks.webp" alt="The Docks at night: containers under a full moon" loading="lazy" width="600" height="800"><div class="body"><h3 class="sign">The Docks</h3><p>Heavy work: cranes, freight, scrap.</p></div></article>
+			<article class="district reveal"><img src="img/d-strip.webp" alt="The Strip at night: neon lights around the arcade" loading="lazy" width="600" height="800"><div class="body"><h3 class="sign">The Strip</h3><p>Night and nerve: the Venue, the arcade, races.</p></div></article>
+			<article class="district reveal"><img src="img/d-waterfront.webp" alt="The Waterfront: the bay under an evening sky" loading="lazy" width="600" height="800"><div class="body"><h3 class="sign">The Waterfront</h3><p>Rest and water: park, beach, fishing.</p></div></article>
+			<article class="district reveal"><img src="img/d-heights.webp" alt="The Heights at sunset: houses above the city" loading="lazy" width="600" height="800"><div class="body"><h3 class="sign">The Heights</h3><p>Homes and growing: studios, houses, the Lots.</p></div></article>
+			<article class="district reveal"><img src="img/d-outskirts.webp" alt="The Outskirts: open ground at the edge of the city" loading="lazy" width="600" height="800"><div class="body"><h3 class="sign">The Outskirts</h3><p>Speed and the edge: the Ring, the quarry, the truck stop.</p></div></article>
 		</div>
 	</div>
 </section>
@@ -162,7 +170,7 @@
 		</div>
 		<div class="jobs-grid">
 			<figure class="shot reveal">
-				<img src="img/job-shift.jpg" alt="A Fountain Pump shift in the game: the player at the pump with the minigame panel reading 'Pump: keep the needle in the band'" loading="lazy" width="1280" height="720">
+				<img src="img/job-shift.webp" srcset="img/job-shift-800.webp 800w, img/job-shift.webp 1280w" sizes="(max-width: 960px) 100vw, 640px" alt="A Fountain Pump shift in the game: the player at the pump with the minigame panel reading 'Pump: keep the needle in the band'" loading="lazy" width="1280" height="720">
 				<figcaption>A Fountain Pump shift: keep the needle in the band to earn stars.</figcaption>
 			</figure>
 			<div class="job-groups reveal">
@@ -193,15 +201,15 @@
 		</div>
 		<div class="biz">
 			<article class="reveal">
-				<figure><img src="img/f-shops.jpg" alt="Shop windows along a street, each lit with a stocked room inside" loading="lazy" width="1280" height="720"></figure>
+				<figure><img src="img/f-shops.webp" srcset="img/f-shops-800.webp 800w, img/f-shops.webp 1280w" sizes="(max-width: 900px) 100vw, 380px" alt="Shop windows along a street, each lit with a stocked room inside" loading="lazy" width="1280" height="720"></figure>
 				<div class="body"><h3>Claim a business</h3><p>The Burger Stand, Harbour Canteen, Fish Market, Pine &amp; Brass, the Strip Soda Bar and the Neon Arcade can each be claimed by a player. The owner chooses how much of the takings goes to the wage pot and how much to the till.</p></div>
 			</article>
 			<article class="reveal">
-				<figure><img src="img/d-market.jpg" alt="Market Street with the clock tower and the market hall" loading="lazy" width="600" height="800"></figure>
+				<figure><img src="img/d-market.webp" alt="Market Street with the clock tower and the market hall" loading="lazy" width="600" height="800"></figure>
 				<div class="body"><h3>Rent a stall</h3><p>24 stalls on Market Street, from pierogi and pho to bubble tea and churros. Rent one for a day, set your own price within its range, and hire a cook and a register.</p></div>
 			</article>
 			<article class="reveal">
-				<figure><img src="img/cta.jpg" alt="The Corner at night: the fountain, the free soup sign and the job boards" loading="lazy" width="1600" height="900"></figure>
+				<figure><img src="img/cta.webp" srcset="img/cta-800.webp 800w, img/cta.webp 1600w" sizes="(max-width: 900px) 100vw, 380px" alt="The Corner at night: the fountain, the free soup sign and the job boards" loading="lazy" width="1600" height="900"></figure>
 				<div class="body"><h3>The free tier</h3><p>The Soup Kitchen, the Fountain and the Park Bench are always open and always free. Their wage pots also get every withdrawal fee, so they pay the people who keep them running.</p></div>
 			</article>
 		</div>
@@ -211,7 +219,7 @@
 <section aria-label="What you can do" style="padding-top:0">
 	<div class="wrap">
 		<div class="feature reveal">
-			<div class="shot portrait"><img src="img/f-phone.jpg" alt="The in-game phone open on its home screen of apps" loading="lazy" width="568" height="740"></div>
+			<div class="shot portrait"><img src="img/f-phone.webp" alt="The in-game phone open on its home screen of apps" loading="lazy" width="568" height="740"></div>
 			<div>
 				<p class="eyebrow">Your phone</p>
 				<h3>The whole city in your pocket</h3>
@@ -224,7 +232,7 @@
 			</div>
 		</div>
 		<div class="feature flip reveal">
-			<div class="shot"><img src="img/f-together.jpg" alt="The Corner's square at night: the fountain, the job boards and the free soup sign" loading="lazy" width="1280" height="720"></div>
+			<div class="shot"><img src="img/f-together.webp" srcset="img/f-together-800.webp 800w, img/f-together.webp 1280w" sizes="(max-width: 900px) 100vw, 620px" alt="The Corner's square at night: the fountain, the job boards and the free soup sign" loading="lazy" width="1280" height="720"></div>
 			<div>
 				<p class="eyebrow">Together</p>
 				<h3>Better with people</h3>
@@ -284,16 +292,16 @@
 			<p class="lede">$SHELL launched on pump.fun on __DATE__, from inside Shell City. The launch was pressed in a live Roblox game server, and the record of it is public for anyone to check.</p>
 		</div>
 		<p style="color:var(--chalk-dim);max-width:62ch;margin:0 0 18px">$SHELL is bought and sold for SOL, and every city coin is bought and sold for $SHELL.</p>
-		<div class="pairs reveal" aria-label="Which coin each coin is priced in">
+		<div class="pairs reveal" aria-label="Which coins trade for which">
 			<div class="tok"><b>SOL</b><span>Solana's own coin</span></div>
-			<div class="link">priced in</div>
-			<div class="tok main"><b>$SHELL</b><span>the city's money</span></div>
-			<div class="link">priced in</div>
+			<div class="link">trades for</div>
+			<div class="tok main"><img class="coin" src="img/coins/shell.png" alt="" width="56" height="56" loading="lazy"><b>$SHELL</b><span>the city's money</span></div>
+			<div class="link">trades for</div>
 			<div class="tok"><b>City coins</b><span>one for each business, more later</span></div>
 		</div>
 		<div class="cards reveal">
 			<div class="card"><h3>From inside the city</h3><p>The launch was made in game, on a live server, by Shell City's owner. Not from a website.</p></div>
-			<div class="card"><h3>City coins</h3><p>Each business gets its own coin, bought and sold for $SHELL. Later, players can launch their own. Follow @ShellCityFun for the day city coins open.</p></div>
+			<div class="card"><h3>City coins</h3><p>Each business gets its own coin, bought and sold for $SHELL inside the game. Every trade costs 2%, shown before you confirm. Later, players can launch their own. Follow @ShellCityFun for the day city coins open.</p></div>
 			<div class="card"><h3>Check the record</h3><p>The <a href="proof/" style="color:var(--teal)">proof page</a> lists the launch transactions, the note written into them, the game server and the game version, so you can check each one. More in <a href="details.html" style="color:var(--teal)">Proof &amp; details</a>.</p></div>
 		</div>
 		<p class="note">Only trust links from shellcity.fun and @ShellCityFun. Token prices can fall as well as rise, and nothing here is financial advice.</p>
@@ -329,11 +337,11 @@
 			<p class="lede">Every picture on this site is a screenshot from Shell City, taken in the game.</p>
 		</div>
 		<div class="gallery reveal">
-			<figure class="w4 h2"><img src="img/g1.jpg" alt="The Corner at night: the free soup sign, and signposts to the bank, the terminal and jobs" loading="lazy" width="1315" height="740"></figure>
-			<figure class="w2 h2"><img src="img/g2.jpg" alt="The free Shell City Loop bus at a crossing" loading="lazy" width="900" height="675"></figure>
-			<figure class="w2 h2"><img src="img/g3.jpg" alt="The beach on the Waterfront, with a lifeguard tower" loading="lazy" width="900" height="675"></figure>
-			<figure class="w2 h2"><img src="img/g4.jpg" alt="A shopfront lit from inside, its menu in the window" loading="lazy" width="900" height="675"></figure>
-			<figure class="w2 h2"><img src="img/g5.jpg" alt="A street at night with lit windows and streetlights" loading="lazy" width="900" height="675"></figure>
+			<figure class="w4 h2"><img src="img/g1.webp" srcset="img/g1-800.webp 800w, img/g1.webp 1315w" sizes="(max-width: 760px) 100vw, 790px" alt="The Corner at night: the free soup sign, and signposts to the bank, the terminal and jobs" loading="lazy" width="1315" height="740"></figure>
+			<figure class="w2 h2"><img src="img/g2.webp" alt="The free Shell City Loop bus at a crossing" loading="lazy" width="900" height="675"></figure>
+			<figure class="w2 h2"><img src="img/g3.webp" alt="The beach on the Waterfront, with a lifeguard tower" loading="lazy" width="900" height="675"></figure>
+			<figure class="w2 h2"><img src="img/g4.webp" alt="A shopfront lit from inside, its menu in the window" loading="lazy" width="900" height="675"></figure>
+			<figure class="w2 h2"><img src="img/g5.webp" alt="A street at night with lit windows and streetlights" loading="lazy" width="900" height="675"></figure>
 		</div>
 	</div>
 </section>
@@ -352,7 +360,7 @@
 			<details><summary>Do I need crypto to play?</summary><p>No. You never need a wallet to play, work, earn or spend. $SHELL is just the money inside the city. A wallet only matters if you want to take money out.</p></details>
 			<details><summary>What is $SHELL?</summary><p>$SHELL is a coin on Solana, a public blockchain. In the game it is the money every wage, price and purchase is counted in. The whole money system has been run end to end on Solana's free test network, with public transactions: see <a href="details.html" style="color:var(--teal)">Proof &amp; details</a>.</p></details>
 			<details><summary>Where did $SHELL launch?</summary><p>On pump.fun on __DATE__, from inside Shell City. The launch record is at <a href="proof/" style="color:var(--teal)">shellcity.fun/proof</a>.</p></details>
-			<details><summary>What are city coins?</summary><p>Coins for the city's businesses, each bought and sold for $SHELL. Later, players will be able to launch their own from the trading terminal. Follow @ShellCityFun for the day city coins open.</p></details>
+			<details><summary>What are city coins?</summary><p>Coins for the city's businesses, each bought and sold for $SHELL at the trading terminal in the game. Every trade costs 2%, shown before you confirm. Later, players will be able to launch their own there too. Follow @ShellCityFun for the day city coins open.</p></details>
 			<details><summary>How do I take money out?</summary><p>Earned $SHELL can leave once your Street Cred reaches 100. You build that up by playing over a few days: paid shifts, a meal or rent, a delivery or repair. You send it to any Solana address you choose, and the fee is shown before you confirm. The 2,500 $SHELL start grant is spendable in the game but never withdrawable.</p></details>
 			<details><summary>Can I lose money?</summary><p>Yes. Token prices can fall as well as rise, and trading city coins can lose money. Prices, fees and losses are always shown before you decide. Earnings are never guaranteed, and nothing on this site is financial advice.</p></details>
 			<details><summary>Will you ever ask for my seed phrase?</summary><p>Never. Shell City never asks for a seed phrase or private key, never asks you to connect a wallet, and never messages you first about money. Anyone who does is not us.</p></details>
@@ -363,7 +371,7 @@
 </section>
 
 <section class="cta" aria-labelledby="cta-title">
-	<img src="img/cta.jpg" alt="" loading="lazy" width="1600" height="900">
+	<img src="img/cta.webp" alt="" loading="lazy" width="1600" height="900">
 	<div class="wrap">
 		<p class="eyebrow" style="justify-content:center">Open now</p>
 		<h2 id="cta-title">See you on the Corner.</h2>
