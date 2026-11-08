@@ -83,6 +83,8 @@ p { margin: 0 0 1em; }
 .nav .wrap { display: flex; align-items: center; justify-content: space-between; height: 68px; gap: 20px; }
 .brand { display: flex; align-items: center; gap: 12px; text-decoration: none; }
 .brand svg { height: 34px; width: auto; }
+.brand { gap: 10px; }
+.brand .brand-mark { width: 30px; height: 30px; }
 .nav-links { display: flex; align-items: center; gap: 22px; }
 .nav-links a { text-decoration: none; font: 500 15px/1 var(--body); color: var(--chalk-dim); }
 .nav-links a:hover, .nav-links a[aria-current="page"] { color: var(--chalk); }
