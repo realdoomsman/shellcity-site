@@ -70,6 +70,8 @@ p { margin: 0 0 1em; }
 .btn-primary:hover { background: #ffb85c; transform: translateY(-1px); }
 .btn-ghost { border-color: rgba(242, 236, 225, .28); color: var(--chalk); background: rgba(13, 18, 28, .35); backdrop-filter: blur(6px); }
 .btn-ghost:hover { border-color: var(--chalk); transform: translateY(-1px); }
+.btn-lg { padding: 18px 30px; font-size: 18px; }
+.btn-lg svg { width: 22px; height: 22px; }
 
 /* ---------- Nav ---------- */
 .nav {
@@ -127,6 +129,14 @@ p { margin: 0 0 1em; }
 .hero-card li::before { content: ""; width: 8px; height: 8px; margin-top: 7px; border-radius: 2px; background: var(--teal); transform: rotate(45deg); }
 .hero-card a.more { color: var(--amber); font-weight: 600; font-size: 15px; text-decoration: none; }
 .hero-card a.more:hover { text-decoration: underline; }
+.hero .lede strong { font-weight: 600; color: var(--chalk); }
+.hero .lede { margin-bottom: 14px; }
+.hero .lede-2 { color: var(--amber); font-weight: 500; margin-bottom: 30px; }
+.how { list-style: none; margin: 0 0 16px; padding: 0; display: grid; gap: 14px; counter-reset: how; }
+.how li { counter-increment: how; display: grid; grid-template-columns: 34px 1fr; column-gap: 12px; }
+.how li::before { content: counter(how); grid-row: span 2; width: 30px; height: 30px; margin-top: 0; transform: none; border-radius: 50%; display: grid; place-items: center; background: var(--amber); color: #1a1206; font: 700 15px/1 var(--body); }
+.how b { display: block; font-size: 16.5px; color: var(--chalk); }
+.how span { font-size: 14.5px; color: var(--chalk-dim); line-height: 1.5; }
 @media (max-width: 960px) { .hero-inner { grid-template-columns: 1fr; gap: 32px; padding-bottom: 56px; } .hero-card { max-width: 520px; } }
 .status {
 	display: inline-flex; align-items: center; gap: 10px; margin-bottom: 22px;
@@ -323,6 +333,8 @@ footer.site .legal { border-top: 1px solid var(--line); padding-top: 22px; displ
 .recordings code { font: 12.5px/1.5 var(--mono); color: var(--muted); word-break: break-all; }
 .recordings-empty { color: var(--muted); margin: 0 0 32px; }
 .verify .cmd { margin: 0 0 14px; }
+
+@media (max-width: 560px) { .proof.stack thead { display: none; } .proof.stack tr { display: block; padding: 14px 0; border-bottom: 1px solid var(--line); } .proof.stack td { display: block; border: 0; padding: 3px 0; white-space: normal; } }
 
 /* ---------- Jobs ---------- */
 .jobs-grid { display: grid; grid-template-columns: 1.3fr 1fr; gap: 48px; align-items: start; }

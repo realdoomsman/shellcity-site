@@ -35,10 +35,10 @@
 			<a href="#city">The city</a>
 			<a href="#jobs">Jobs</a>
 			<a href="#business">Businesses</a>
-			<a href="#economy">Economy</a>
 			<a href="#launch">$SHELL</a>
 			<a href="#play">How to play</a>
 			<a href="#faq">FAQ</a>
+			<a href="details.html">Proof &amp; details</a>
 			<a class="btn btn-primary" href="https://www.roblox.com/games/130170912798923" rel="noopener">Roblox</a>
 		</nav>
 	</div>
@@ -59,11 +59,12 @@
 			<img class="hero-logo" src="img/logo.svg" alt="" width="692" height="212">
 			<h1 id="hero-title">Shell City</h1>
 			<p class="tagline">Work. Explore. Live it.</p>
-			<p class="lede">A seaside city on Roblox with eight districts and 29 jobs. Clock in, get paid, rent a stall, claim a business. Wages are never printed, and the city's money is $SHELL, a token on Solana.</p>
+			<p class="lede"><strong>Shell City is a Roblox game where you work jobs, run businesses and live in a city with its own money.</strong></p>
+			<p class="lede lede-2">$SHELL is the city's coin. It launches on pump.fun, from inside the game.</p>
 			<div class="hero-actions">
-				<a class="btn btn-primary" href="https://www.roblox.com/games/130170912798923" rel="noopener">
+				<a class="btn btn-primary btn-lg" href="https://www.roblox.com/games/130170912798923" rel="noopener">
 					<svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M5.6 2 2 18.4 18.4 22 22 5.6 5.6 2Zm8.1 12.9-4.6-1 1-4.6 4.6 1-1 4.6Z"/></svg>
-					Shell City on Roblox
+					Play on Roblox
 				</a>
 				<a class="btn btn-ghost" href="https://x.com/ShellCityFun" rel="noopener">
 					<svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.8 3h3.2l-7 8 8.2 10h-6.4l-5-6.5L4.9 21H1.7l7.5-8.6L1.4 3h6.6l4.5 6 5.3-6Zm-1.1 16h1.8L7.4 4.9H5.5L16.7 19Z"/></svg>
@@ -72,15 +73,14 @@
 			</div>
 		</div>
 		<div class="hero-card" role="region" aria-labelledby="hero-card-title">
-			<p class="eyebrow">$SHELL</p>
-			<h2 id="hero-card-title">Launches from inside the city</h2>
-			<p>$SHELL launches on pump.fun from inside Shell City, paired with SOL. Not before, and not from a website.</p>
-			<ul>
-				<li>Every city coin is paired with $SHELL</li>
-				<li>The launch record goes up on the proof page</li>
-				<li>No wallet needed to play</li>
-			</ul>
-			<a class="more" href="#launch">How the launch works →</a>
+			<p class="eyebrow">How it works</p>
+			<h2 id="hero-card-title" class="sr">How it works</h2>
+			<ol class="how">
+				<li><b>Play and earn $SHELL</b><span>Pick a job, finish your shift, get paid in $SHELL. Free to play, no wallet needed.</span></li>
+				<li><b>Own a business</b><span>Rent a market stall or claim a shop and earn from its sales. Business coins, bought and sold for $SHELL, open after launch.</span></li>
+				<li><b>Cash out</b><span>Send the $SHELL you earned to your own Solana wallet, after a few days of play.</span></li>
+			</ol>
+			<a class="more" href="#economy">How the money works →</a>
 		</div>
 	</div>
 </section>
@@ -246,14 +246,14 @@
 			<p class="lede" style="margin-top:22px">Inside Shell City, $SHELL is simply money: what you earn, spend and save. Every price, fee and wage follows the same few rules.</p>
 			<ol class="promises">
 				<li><div><b>No printed wages</b><span>Wages come out of each business's wage pot, filled by what players spend there and a slow hourly release from the city's payroll fund. No coin is minted to pay anyone.</span></div></li>
-				<li><div><b>One price, on chain</b><span>Every price comes from an on-chain pool. The game never makes one up.</span></div></li>
+				<li><div><b>Real market prices</b><span>Prices come from the live market on Solana, the blockchain $SHELL runs on. The game never makes one up.</span></div></li>
 				<li><div><b>No wallet connect, no keys</b><span>You never connect a wallet or see a private key. Withdraw to any Solana address when you want to.</span></div></li>
 				<li><div><b>Free means free</b><span>Soup, water and a bench always work, just slowly. Nobody pays to play.</span></div></li>
 				<li><div><b>No hidden costs</b><span>Every price, fee and loss is shown at the moment you decide.</span></div></li>
 			</ol>
 			<div class="flow" aria-label="Where a purchase goes">
 				<div><b>85%</b><span>to the business: its wage pot, and its owner's till if it has one</span></div>
-				<div><b>10%</b><span>to its coin's buyback and burn; to the treasury until city coins open</span></div>
+				<div><b>10%</b><span>to buy back the business's coin and destroy it, so fewer exist. Until city coins open, it goes to the treasury.</span></div>
 				<div><b>5%</b><span>to the city treasury</span></div>
 			</div>
 			<p style="margin-top:30px"><a class="btn btn-ghost" href="shell.html">How $SHELL works</a></p>
@@ -280,19 +280,20 @@
 				<p class="eyebrow">The $SHELL launch</p>
 				<h2 id="launch-title">Launched from<br>inside the game.</h2>
 			</div>
-			<p class="lede">$SHELL launches on pump.fun from inside Shell City, paired with SOL. The launch is made from a live Roblox game server, and the record of it goes up for anyone to check.</p>
+			<p class="lede">$SHELL launches on pump.fun from inside Shell City. The launch is pressed in a live Roblox game server, and the record of it goes up for anyone to check.</p>
 		</div>
-		<div class="pairs reveal" aria-label="How the coins are paired">
+		<p style="color:var(--chalk-dim);max-width:62ch;margin:0 0 18px">$SHELL is bought and sold for SOL, and every city coin is bought and sold for $SHELL.</p>
+		<div class="pairs reveal" aria-label="Which coin each coin is priced in">
 			<div class="tok"><b>SOL</b><span>Solana's own coin</span></div>
-			<div class="link">paired</div>
+			<div class="link">priced in</div>
 			<div class="tok main"><b>$SHELL</b><span>the city's money</span></div>
-			<div class="link">paired</div>
+			<div class="link">priced in</div>
 			<div class="tok"><b>City coins</b><span>one for each business, more later</span></div>
 		</div>
 		<div class="cards reveal">
 			<div class="card"><h3>From inside the city</h3><p>The launch is made in game, on a live server, by Shell City's owner. Not from a website, and not before the city is ready.</p></div>
-			<div class="card"><h3>City coins</h3><p>Every city coin is paired with $SHELL: each business's coin and, later, coins players launch from the trading terminal. City coins open after $SHELL launches.</p></div>
-			<div class="card"><h3>Check the record</h3><p>Once $SHELL launches, the <a href="proof/" style="color:var(--teal)">proof page</a> lists the launch transactions, the on-chain memo, the game server and the place version, so you can check each one.</p></div>
+			<div class="card"><h3>City coins</h3><p>Each business gets its own coin, bought and sold for $SHELL. Later, players can launch their own. City coins open after $SHELL launches.</p></div>
+			<div class="card"><h3>Check the record</h3><p>Once $SHELL launches, the <a href="proof/" style="color:var(--teal)">proof page</a> lists the launch transactions, the note written into them, the game server and the game version, so you can check each one. More in <a href="details.html" style="color:var(--teal)">Proof &amp; details</a>.</p></div>
 		</div>
 		<p class="note">$SHELL is not live or tradable yet. Until it launches, any token using the name is not ours. Only trust links from shellcity.fun and @ShellCityFun.</p>
 	</div>
@@ -348,9 +349,9 @@
 			<details><summary>When can I play?</summary><p>Shell City opens on Roblox the day $SHELL launches. The opening is announced on X, TikTok and Instagram first, so follow @ShellCityFun to catch it.</p></details>
 			<details><summary>Is it free?</summary><p>Yes. Shell City is free to play on Roblox. Food, water and rest are free forever, and your first wage comes from working, not paying.</p></details>
 			<details><summary>Do I need crypto to play?</summary><p>No. You never need a wallet to play, work, earn or spend. $SHELL is just the money inside the city. A wallet only matters if you want to take money out.</p></details>
-			<details><summary>What is $SHELL?</summary><p>$SHELL is a token on Solana. In the game it is the money every wage, price and purchase is counted in. The whole loop (deposit, trade, buyback and burn, withdrawal and daily reconciliation) has been run on Solana devnet with public transactions.</p></details>
-			<details><summary>Where does $SHELL launch?</summary><p>On pump.fun, paired with SOL, and the launch is made from inside Shell City. It is not live or tradable yet. When it launches, the launch record goes up at <a href="proof/" style="color:var(--teal)">shellcity.fun/proof</a>.</p></details>
-			<details><summary>What are city coins?</summary><p>Coins for the city's businesses, each paired with $SHELL. Later, players will be able to launch their own from the trading terminal. City coins open after $SHELL launches.</p></details>
+			<details><summary>What is $SHELL?</summary><p>$SHELL is a coin on Solana, a public blockchain. In the game it is the money every wage, price and purchase is counted in. The whole money system has been run end to end on Solana's free test network, with public transactions: see <a href="details.html" style="color:var(--teal)">Proof &amp; details</a>.</p></details>
+			<details><summary>Where does $SHELL launch?</summary><p>On pump.fun, from inside Shell City. It is not live or tradable yet. When it launches, the launch record goes up at <a href="proof/" style="color:var(--teal)">shellcity.fun/proof</a>.</p></details>
+			<details><summary>What are city coins?</summary><p>Coins for the city's businesses, each bought and sold for $SHELL. Later, players will be able to launch their own from the trading terminal. City coins open after $SHELL launches.</p></details>
 			<details><summary>How do I take money out?</summary><p>Earned $SHELL can leave once your Street Cred reaches 100. You build that up by playing over a few days: paid shifts, a meal or rent, a delivery or repair. You send it to any Solana address you choose, and the fee is shown before you confirm. The 2,500 $SHELL start grant is spendable in the game but never withdrawable.</p></details>
 			<details><summary>Can I lose money?</summary><p>Yes. Token prices can fall as well as rise, and trading city coins can lose money. Prices, fees and losses are always shown before you decide. Earnings are never guaranteed, and nothing on this site is financial advice.</p></details>
 			<details><summary>Will you ever ask for my seed phrase?</summary><p>Never. Shell City never asks for a seed phrase or private key, never asks you to connect a wallet, and never messages you first about money. Anyone who does is not us.</p></details>
@@ -385,7 +386,7 @@
 				<p>A Roblox city that runs on $SHELL, where wages are never printed.</p>
 			</div>
 			<div><h2>The game</h2><ul><li><a href="#city">The city</a></li><li><a href="#jobs">Jobs</a></li><li><a href="#business">Businesses</a></li><li><a href="#play">How to play</a></li><li><a href="https://www.roblox.com/games/130170912798923" rel="noopener">On Roblox</a></li></ul></div>
-			<div><h2>$SHELL</h2><ul><li><a href="shell.html">How it works</a></li><li><a href="shell.html#proof">Proof on devnet</a></li><li><a href="shell.html#status">Launch status</a></li><li><a href="proof/">Launch proof</a></li><li><a href="help.html">Help</a></li><li><a href="terms.html">Terms</a></li><li><a href="privacy.html">Privacy</a></li></ul></div>
+			<div><h2>$SHELL</h2><ul><li><a href="details.html">Proof &amp; details</a></li><li><a href="shell.html">How the money works</a></li><li><a href="proof/">Launch proof</a></li><li><a href="help.html">Help</a></li><li><a href="terms.html">Terms</a></li><li><a href="privacy.html">Privacy</a></li></ul></div>
 			<div><h2>Follow</h2><ul><li><a href="https://x.com/ShellCityFun" rel="noopener">X @ShellCityFun</a></li><li><a href="https://www.tiktok.com/@shellcityfun" rel="noopener">TikTok</a></li><li><a href="https://www.instagram.com/shellcityfun/" rel="noopener">Instagram</a></li></ul></div>
 		</div>
 		<div class="legal">
