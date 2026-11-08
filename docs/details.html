@@ -109,7 +109,7 @@
 			<table class="proof stack">
 				<thead><tr><th>Step</th><th>What happened</th><th>Transaction</th></tr></thead>
 				<tbody>
-					<tr><td>Launch press</td><td>The coin created on pump.fun with its first buy, signed by a fresh launch wallet. Its memo names Roblox place 130170912798923, the game server and place version 57</td><td><a href="https://solscan.io/tx/4QCqhnJiLP7osSothGHjaqotcJstSLWfbRzDjC1D5B3Eck9C2tKGgUjfj5niba49z9SbGDdQoHCQFvMxt2jWGetP?cluster=devnet" rel="noopener">4QCqhnJi…t2jWGetP</a></td></tr>
+					<tr><td>Launch press</td><td>The coin created on pump.fun with its first buy, signed by a fresh launch wallet. The press was sent by a test script the way a game server sends it, so its memo names Roblox place 130170912798923, a test server id and place version 57</td><td><a href="https://solscan.io/tx/4QCqhnJiLP7osSothGHjaqotcJstSLWfbRzDjC1D5B3Eck9C2tKGgUjfj5niba49z9SbGDdQoHCQFvMxt2jWGetP?cluster=devnet" rel="noopener">4QCqhnJi…t2jWGetP</a></td></tr>
 					<tr><td>First buy to the treasury</td><td>Every coin from the first buy moved to the treasury; its memo points back to the launch</td><td><a href="https://solscan.io/tx/4YJkUsqbg2TBc7Q6FCn3L6C9CNmFJqsuNYy7HwcRCwbLzk1pCyzXS3QWEQ4niKhV2J42cL948vVdAShcN6oxX2i2?cluster=devnet" rel="noopener">4YJkUsqb…N6oxX2i2</a></td></tr>
 					<tr><td>Fee claim to the treasury</td><td>The coin's creator fee from a later trade, claimed by the launch wallet and sent to the treasury in the same transaction</td><td><a href="https://solscan.io/tx/2riwgCm2UbF4ZeNtuRHCad7XXn1WF2TZL2SSc7m189DJKdnGmBPraVchEDRj6FFc44oBT1oDqZMWbzgqj8HYK64h?cluster=devnet" rel="noopener">2riwgCm2…j8HYK64h</a></td></tr>
 				</tbody>
@@ -137,7 +137,7 @@
 			<div class="card"><h3>Load test</h3><p>Simulated players running one game server for a full session, to find where things slow down.</p>
 			<!-- LOAD-TEST-RESULTS: put the cloud load-test numbers here (players, minutes, request rate, worst response time) when the run is done. -->
 			</div>
-			<div class="card"><h3>Test network runs</h3><p>The in-game launch, deposits and withdrawals have each been run end to end on devnet, with the public transactions above.</p></div>
+			<div class="card"><h3>Test network runs</h3><p>The launch flow (pressed by a test script the way the game presses it), deposits and withdrawals have each been run end to end on devnet, with the public transactions above.</p></div>
 		</div>
 		<p class="note">Shell City never asks for a seed phrase or a wallet connection, and makes no promise of earnings. Token prices can fall as well as rise.</p>
 	</div>
